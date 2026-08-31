@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<DARoots Version="1" Minor="6">
+	<FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+		<Filter Type="Constrs"/>
+		<Config>
+			<Option Name="TargetPart" Val="xc6slx45tfgg484-3"/>
+		</Config>
+	</FileSet>
+</DARoots>
+

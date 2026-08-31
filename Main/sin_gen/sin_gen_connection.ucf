@@ -1,0 +1,36 @@
+NET "clk" LOC=AB13;
+NET "reset" LOC=G6;
+NET "out_clk_p" LOC=R9 | IOSTANDARD = LVCMOS25 | SLEW = FAST | DRIVE = 12;
+NET "out_clk_n" LOC=R8 | IOSTANDARD = LVCMOS25 | SLEW = FAST | DRIVE = 12;
+NET "takt_p" LOC=U16;
+NET "takt_n" LOC=V15;
+NET "led_ds4" LOC=AB4;
+
+NET "adc_clk" LOC=AA10;
+NET "adc_data_a" LOC=W14;
+NET "adc_data_b" LOC=U14;
+NET "adc_cs" LOC=Y17;
+NET "uart_tx" LOC=B21;
+
+
+NET "control" LOC=G9;
+//NET "sin_out[1]" LOC=F14;
+//NET "sin_out[2]" LOC=G8;
+//NET "sin_out[3]" LOC=B18;
+//NET "sin_out[4]" LOC=C19;
+//NET "sin_out[5]" LOC=C4;
+//NET "sin_out[6]" LOC=D4;
+//NET "sin_out[7]" LOC=B2;
+//NET "sin_out[8]" LOC=B20;
+//NET "sin_out[9]" LOC=F7;
+
+NET "signal_out[0]" LOC=H10;
+NET "signal_out[1]" LOC=H14;
+NET "signal_out[2]" LOC=H13;
+NET "signal_out[3]" LOC=G16;
+NET "signal_out[4]" LOC=C17;
+NET "signal_out[5]" LOC=D18;
+NET "signal_out[6]" LOC=C5;
+NET "signal_out[7]" LOC=Y11;
+NET "signal_out[8]" LOC=T12;
+NET "signal_out[9]" LOC=R11;

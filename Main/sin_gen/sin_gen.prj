@@ -1,0 +1,6 @@
+verilog work "ipcore_dir/sine_lut.v"
+verilog work "uart_tx.v"
+verilog work "max5853_dual_cntrl.v"
+verilog work "ipcore_dir/cose_lut.v"
+verilog work "adc_receiver.v"
+verilog work "sin_gen.v"

@@ -1,0 +1,12 @@
+Storage Target: BPI Flash Single FPGA
+Storage Family: Spartan6
+8M
+FF
+sin_gen_bpi
+C:\Xilinx\Project\sin_gen\
+
+MCS
+x16
+No
+
+

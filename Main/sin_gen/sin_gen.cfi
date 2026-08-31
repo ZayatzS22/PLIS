@@ -1,0 +1,11 @@
+# PROMGEN: Xilinx Prom Generator M.63c
+# Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+SOFTWARE_VERSION M.63c
+DATE            04/08/2026 - 13:57
+SOURCE          C:\Xilinx\Project\sin_gen\sin_gen.mcs
+DEVICE          4096K
+DATA_WIDTH      16
+FILL_DATA       0xFF
+SIGNATURE       0x293A1844
+START_ADDRESS   0x00000000 END_ADDRESS 0x0016A673 DIRECTION_UP   "C:/Xilinx/Project/sin_gen/sin_gen.bit" 6slx45tfgg484

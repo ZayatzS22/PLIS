@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# PlanAhead v12.2
+# Build 65285 by hdbuild on Wed Jun 23 14:55:19 PDT 2010
+# Start of session at: Fri Apr 03 15:41:32 2026
+# Process ID: 3644
+# Log file: C:/Xilinx/Project/sin_gen/planAhead_run_1/planAhead.log
+# Journal file: C:/Xilinx/Project/sin_gen/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+source D:/Xilinx/12.2/ISE_DS/PlanAhead/scripts/sdc.tcl
+start_gui -source C:/Xilinx/Project/sin_gen/pa.fromHdl.tcl
+# create_project -name sin_gen -dir "C:/Xilinx/Project/sin_gen/planAhead_run_1" -part xc6slx45tfgg484-3
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property top sin_gen $srcset
+# set_param project.paUcfFile  "C:/Users/msemakin/Desktop/takt_gen/takt_gen_connection (2).ucf"
+# set hdlfile [add_files [list {ipcore_dir/sine_lut.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../../../Users/msemakin/Desktop/takt_gen/sin_gen.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# add_files "C:/Users/msemakin/Desktop/takt_gen/takt_gen_connection (2).ucf" -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc6slx45tfgg484-3
+exit

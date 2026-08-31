@@ -1,0 +1,18 @@
+# Output products list for <sine_lut>
+_xmsgs\pn_parser.xmsgs
+dist_mem_gen_ds322.pdf
+dist_mem_gen_readme.txt
+sine_lut.asy
+sine_lut.gise
+sine_lut.mif
+sine_lut.ngc
+sine_lut.sym
+sine_lut.v
+sine_lut.veo
+sine_lut.vhd
+sine_lut.vho
+sine_lut.xco
+sine_lut.xise
+sine_lut_flist.txt
+sine_lut_readme.txt
+sine_lut_xmdf.tcl

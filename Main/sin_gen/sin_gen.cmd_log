@@ -1,0 +1,445 @@
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc "C:/Users/msemakin/Desktop/takt_gen/takt_gen_connection (2).ucf" -p xc6slx45t-fgg484-3 sin_gen.ngc sin_gen.ngd  
+map -intstyle ise -p xc6slx45t-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o sin_gen_map.ncd sin_gen.ngd sin_gen.pcf 
+par -w -intstyle ise -ol high -mt off sin_gen_map.ncd sin_gen.ncd sin_gen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sin_gen.twx sin_gen.ncd -o sin_gen.twr sin_gen.pcf 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc "C:/Users/msemakin/Desktop/takt_gen/takt_gen_connection (2).ucf" -p xc6slx45t-fgg484-3 sin_gen.ngc sin_gen.ngd  
+map -intstyle ise -p xc6slx45t-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o sin_gen_map.ncd sin_gen.ngd sin_gen.pcf 
+par -w -intstyle ise -ol high -mt off sin_gen_map.ncd sin_gen.ncd sin_gen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sin_gen.twx sin_gen.ncd -o sin_gen.twr sin_gen.pcf 
+bitgen -intstyle ise -f sin_gen.ut sin_gen.ncd 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc "C:/Users/msemakin/Desktop/takt_gen/takt_gen_connection (2).ucf" -p xc6slx45t-fgg484-3 sin_gen.ngc sin_gen.ngd  
+map -intstyle ise -p xc6slx45t-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o sin_gen_map.ncd sin_gen.ngd sin_gen.pcf 
+par -w -intstyle ise -ol high -mt off sin_gen_map.ncd sin_gen.ncd sin_gen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sin_gen.twx sin_gen.ncd -o sin_gen.twr sin_gen.pcf 
+bitgen -intstyle ise -f sin_gen.ut sin_gen.ncd 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc "C:/Users/msemakin/Desktop/takt_gen/takt_gen_connection (2).ucf" -p xc6slx45t-fgg484-3 sin_gen.ngc sin_gen.ngd  
+map -intstyle ise -p xc6slx45t-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o sin_gen_map.ncd sin_gen.ngd sin_gen.pcf 
+par -w -intstyle ise -ol high -mt off sin_gen_map.ncd sin_gen.ncd sin_gen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sin_gen.twx sin_gen.ncd -o sin_gen.twr sin_gen.pcf 
+bitgen -intstyle ise -f sin_gen.ut sin_gen.ncd 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc "C:/Users/msemakin/Desktop/takt_gen/takt_gen_connection (2).ucf" -p xc6slx45t-fgg484-3 sin_gen.ngc sin_gen.ngd  
+map -intstyle ise -p xc6slx45t-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o sin_gen_map.ncd sin_gen.ngd sin_gen.pcf 
+par -w -intstyle ise -ol high -mt off sin_gen_map.ncd sin_gen.ncd sin_gen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sin_gen.twx sin_gen.ncd -o sin_gen.twr sin_gen.pcf 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc "C:/Users/msemakin/Desktop/takt_gen/takt_gen_connection (2).ucf" -p xc6slx45t-fgg484-3 sin_gen.ngc sin_gen.ngd  
+map -intstyle ise -p xc6slx45t-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o sin_gen_map.ncd sin_gen.ngd sin_gen.pcf 
+par -w -intstyle ise -ol high -mt off sin_gen_map.ncd sin_gen.ncd sin_gen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sin_gen.twx sin_gen.ncd -o sin_gen.twr sin_gen.pcf 
+bitgen -intstyle ise -f sin_gen.ut sin_gen.ncd 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc "C:/Users/msemakin/Desktop/takt_gen/takt_gen_connection (2).ucf" -p xc6slx45t-fgg484-3 sin_gen.ngc sin_gen.ngd  
+map -intstyle ise -p xc6slx45t-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o sin_gen_map.ncd sin_gen.ngd sin_gen.pcf 
+par -w -intstyle ise -ol high -mt off sin_gen_map.ncd sin_gen.ncd sin_gen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sin_gen.twx sin_gen.ncd -o sin_gen.twr sin_gen.pcf 
+bitgen -intstyle ise -f sin_gen.ut sin_gen.ncd 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc "C:/Users/msemakin/Desktop/takt_gen/takt_gen_connection (2).ucf" -p xc6slx45t-fgg484-3 sin_gen.ngc sin_gen.ngd  
+map -intstyle ise -p xc6slx45t-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o sin_gen_map.ncd sin_gen.ngd sin_gen.pcf 
+par -w -intstyle ise -ol high -mt off sin_gen_map.ncd sin_gen.ncd sin_gen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sin_gen.twx sin_gen.ncd -o sin_gen.twr sin_gen.pcf 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc "C:/Users/msemakin/Desktop/takt_gen/takt_gen_connection (2).ucf" -p xc6slx45t-fgg484-3 sin_gen.ngc sin_gen.ngd  
+map -intstyle ise -p xc6slx45t-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o sin_gen_map.ncd sin_gen.ngd sin_gen.pcf 
+par -w -intstyle ise -ol high -mt off sin_gen_map.ncd sin_gen.ncd sin_gen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sin_gen.twx sin_gen.ncd -o sin_gen.twr sin_gen.pcf 
+bitgen -intstyle ise -f sin_gen.ut sin_gen.ncd 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc "C:/Users/msemakin/Desktop/takt_gen/takt_gen_connection (2).ucf" -p xc6slx45t-fgg484-3 sin_gen.ngc sin_gen.ngd  
+map -intstyle ise -p xc6slx45t-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o sin_gen_map.ncd sin_gen.ngd sin_gen.pcf 
+par -w -intstyle ise -ol high -mt off sin_gen_map.ncd sin_gen.ncd sin_gen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sin_gen.twx sin_gen.ncd -o sin_gen.twr sin_gen.pcf 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc "C:/Users/msemakin/Desktop/takt_gen/takt_gen_connection (2).ucf" -p xc6slx45t-fgg484-3 sin_gen.ngc sin_gen.ngd  
+map -intstyle ise -p xc6slx45t-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o sin_gen_map.ncd sin_gen.ngd sin_gen.pcf 
+par -w -intstyle ise -ol high -mt off sin_gen_map.ncd sin_gen.ncd sin_gen.pcf 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc "C:/Users/msemakin/Desktop/takt_gen/takt_gen_connection (2).ucf" -p xc6slx45t-fgg484-3 sin_gen.ngc sin_gen.ngd  
+map -intstyle ise -p xc6slx45t-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o sin_gen_map.ncd sin_gen.ngd sin_gen.pcf 
+par -w -intstyle ise -ol high -mt off sin_gen_map.ncd sin_gen.ncd sin_gen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sin_gen.twx sin_gen.ncd -o sin_gen.twr sin_gen.pcf 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim sin_gen.ngc sin_gen_synthesis.v 
+bitgen -intstyle ise -f sin_gen.ut sin_gen.ncd 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc "C:/Users/msemakin/Desktop/takt_gen/takt_gen_connection (2).ucf" -p xc6slx45t-fgg484-3 sin_gen.ngc sin_gen.ngd  
+map -intstyle ise -p xc6slx45t-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o sin_gen_map.ncd sin_gen.ngd sin_gen.pcf 
+par -w -intstyle ise -ol high -mt off sin_gen_map.ncd sin_gen.ncd sin_gen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sin_gen.twx sin_gen.ncd -o sin_gen.twr sin_gen.pcf 
+bitgen -intstyle ise -f sin_gen.ut sin_gen.ncd 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc "C:/Users/msemakin/Desktop/takt_gen/takt_gen_connection (2).ucf" -p xc6slx45t-fgg484-3 sin_gen.ngc sin_gen.ngd  
+map -intstyle ise -p xc6slx45t-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o sin_gen_map.ncd sin_gen.ngd sin_gen.pcf 
+par -w -intstyle ise -ol high -mt off sin_gen_map.ncd sin_gen.ncd sin_gen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sin_gen.twx sin_gen.ncd -o sin_gen.twr sin_gen.pcf 
+bitgen -intstyle ise -f sin_gen.ut sin_gen.ncd 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc "C:/Users/msemakin/Desktop/takt_gen/takt_gen_connection (2).ucf" -p xc6slx45t-fgg484-3 sin_gen.ngc sin_gen.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc "C:/Users/msemakin/Desktop/takt_gen/takt_gen_connection (2).ucf" -p xc6slx45t-fgg484-3 sin_gen.ngc sin_gen.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc "C:/Users/msemakin/Desktop/takt_gen/takt_gen_connection (2).ucf" -p xc6slx45t-fgg484-3 sin_gen.ngc sin_gen.ngd  
+map -intstyle ise -p xc6slx45t-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o sin_gen_map.ncd sin_gen.ngd sin_gen.pcf 
+par -w -intstyle ise -ol high -mt off sin_gen_map.ncd sin_gen.ncd sin_gen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sin_gen.twx sin_gen.ncd -o sin_gen.twr sin_gen.pcf 
+bitgen -intstyle ise -f sin_gen.ut sin_gen.ncd 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim sin_gen.ngc sin_gen_synthesis.v 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc "C:/Users/msemakin/Desktop/takt_gen/takt_gen_connection (2).ucf" -p xc6slx45t-fgg484-3 sin_gen.ngc sin_gen.ngd  
+map -intstyle ise -p xc6slx45t-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o sin_gen_map.ncd sin_gen.ngd sin_gen.pcf 
+par -w -intstyle ise -ol high -mt off sin_gen_map.ncd sin_gen.ncd sin_gen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sin_gen.twx sin_gen.ncd -o sin_gen.twr sin_gen.pcf 
+bitgen -intstyle ise -f sin_gen.ut sin_gen.ncd 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc "C:/Users/msemakin/Desktop/takt_gen/takt_gen_connection (2).ucf" -p xc6slx45t-fgg484-3 sin_gen.ngc sin_gen.ngd  
+map -intstyle ise -p xc6slx45t-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o sin_gen_map.ncd sin_gen.ngd sin_gen.pcf 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc "C:/Users/msemakin/Desktop/takt_gen/takt_gen_connection (2).ucf" -p xc6slx45t-fgg484-3 sin_gen.ngc sin_gen.ngd  
+map -intstyle ise -p xc6slx45t-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o sin_gen_map.ncd sin_gen.ngd sin_gen.pcf 
+par -w -intstyle ise -ol high -mt off sin_gen_map.ncd sin_gen.ncd sin_gen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sin_gen.twx sin_gen.ncd -o sin_gen.twr sin_gen.pcf 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc "C:/Users/msemakin/Desktop/takt_gen/takt_gen_connection (2).ucf" -p xc6slx45t-fgg484-3 sin_gen.ngc sin_gen.ngd  
+map -intstyle ise -p xc6slx45t-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o sin_gen_map.ncd sin_gen.ngd sin_gen.pcf 
+par -w -intstyle ise -ol high -mt off sin_gen_map.ncd sin_gen.ncd sin_gen.pcf 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc "C:/Users/msemakin/Desktop/takt_gen/takt_gen_connection (2).ucf" -p xc6slx45t-fgg484-3 sin_gen.ngc sin_gen.ngd  
+map -intstyle ise -p xc6slx45t-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o sin_gen_map.ncd sin_gen.ngd sin_gen.pcf 
+par -w -intstyle ise -ol high -mt off sin_gen_map.ncd sin_gen.ncd sin_gen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sin_gen.twx sin_gen.ncd -o sin_gen.twr sin_gen.pcf 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc "C:/Users/msemakin/Desktop/takt_gen/takt_gen_connection (2).ucf" -p xc6slx45t-fgg484-3 sin_gen.ngc sin_gen.ngd  
+map -intstyle ise -p xc6slx45t-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o sin_gen_map.ncd sin_gen.ngd sin_gen.pcf 
+par -w -intstyle ise -ol high -mt off sin_gen_map.ncd sin_gen.ncd sin_gen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sin_gen.twx sin_gen.ncd -o sin_gen.twr sin_gen.pcf 
+bitgen -intstyle ise -f sin_gen.ut sin_gen.ncd 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc "C:/Users/msemakin/Desktop/takt_gen/takt_gen_connection (2).ucf" -p xc6slx45t-fgg484-3 sin_gen.ngc sin_gen.ngd  
+map -intstyle ise -p xc6slx45t-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o sin_gen_map.ncd sin_gen.ngd sin_gen.pcf 
+par -w -intstyle ise -ol high -mt off sin_gen_map.ncd sin_gen.ncd sin_gen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sin_gen.twx sin_gen.ncd -o sin_gen.twr sin_gen.pcf 
+bitgen -intstyle ise -f sin_gen.ut sin_gen.ncd 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc "C:/Users/msemakin/Desktop/takt_gen/takt_gen_connection (2).ucf" -p xc6slx45t-fgg484-3 sin_gen.ngc sin_gen.ngd  
+map -intstyle ise -p xc6slx45t-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o sin_gen_map.ncd sin_gen.ngd sin_gen.pcf 
+par -w -intstyle ise -ol high -mt off sin_gen_map.ncd sin_gen.ncd sin_gen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sin_gen.twx sin_gen.ncd -o sin_gen.twr sin_gen.pcf 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc "C:/Users/msemakin/Desktop/takt_gen/takt_gen_connection (2).ucf" -p xc6slx45t-fgg484-3 sin_gen.ngc sin_gen.ngd  
+map -intstyle ise -p xc6slx45t-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o sin_gen_map.ncd sin_gen.ngd sin_gen.pcf 
+par -w -intstyle ise -ol high -mt off sin_gen_map.ncd sin_gen.ncd sin_gen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sin_gen.twx sin_gen.ncd -o sin_gen.twr sin_gen.pcf 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc "C:/Users/msemakin/Desktop/takt_gen/takt_gen_connection (2).ucf" -p xc6slx45t-fgg484-3 sin_gen.ngc sin_gen.ngd  
+map -intstyle ise -p xc6slx45t-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o sin_gen_map.ncd sin_gen.ngd sin_gen.pcf 
+par -w -intstyle ise -ol high -mt off sin_gen_map.ncd sin_gen.ncd sin_gen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sin_gen.twx sin_gen.ncd -o sin_gen.twr sin_gen.pcf 
+bitgen -intstyle ise -f sin_gen.ut sin_gen.ncd 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc "C:/Users/msemakin/Desktop/takt_gen/takt_gen_connection (2).ucf" -p xc6slx45t-fgg484-3 sin_gen.ngc sin_gen.ngd  
+map -intstyle ise -p xc6slx45t-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o sin_gen_map.ncd sin_gen.ngd sin_gen.pcf 
+par -w -intstyle ise -ol high -mt off sin_gen_map.ncd sin_gen.ncd sin_gen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sin_gen.twx sin_gen.ncd -o sin_gen.twr sin_gen.pcf 
+bitgen -intstyle ise -f sin_gen.ut sin_gen.ncd 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc "C:/Users/msemakin/Desktop/takt_gen/takt_gen_connection (2).ucf" -p xc6slx45t-fgg484-3 sin_gen.ngc sin_gen.ngd  
+map -intstyle ise -p xc6slx45t-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o sin_gen_map.ncd sin_gen.ngd sin_gen.pcf 
+par -w -intstyle ise -ol high -mt off sin_gen_map.ncd sin_gen.ncd sin_gen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sin_gen.twx sin_gen.ncd -o sin_gen.twr sin_gen.pcf 
+bitgen -intstyle ise -f sin_gen.ut sin_gen.ncd 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc "C:/Users/msemakin/Desktop/takt_gen/takt_gen_connection (2).ucf" -p xc6slx45t-fgg484-3 sin_gen.ngc sin_gen.ngd  
+map -intstyle ise -p xc6slx45t-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o sin_gen_map.ncd sin_gen.ngd sin_gen.pcf 
+par -w -intstyle ise -ol high -mt off sin_gen_map.ncd sin_gen.ncd sin_gen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sin_gen.twx sin_gen.ncd -o sin_gen.twr sin_gen.pcf 
+bitgen -intstyle ise -f sin_gen.ut sin_gen.ncd 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc "C:/Users/msemakin/Desktop/takt_gen/takt_gen_connection (2).ucf" -p xc6slx45t-fgg484-3 sin_gen.ngc sin_gen.ngd  
+map -intstyle ise -p xc6slx45t-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o sin_gen_map.ncd sin_gen.ngd sin_gen.pcf 
+par -w -intstyle ise -ol high -mt off sin_gen_map.ncd sin_gen.ncd sin_gen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sin_gen.twx sin_gen.ncd -o sin_gen.twr sin_gen.pcf 
+bitgen -intstyle ise -f sin_gen.ut sin_gen.ncd 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc "C:/Users/msemakin/Desktop/takt_gen/takt_gen_connection (2).ucf" -p xc6slx45t-fgg484-3 sin_gen.ngc sin_gen.ngd  
+map -intstyle ise -p xc6slx45t-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o sin_gen_map.ncd sin_gen.ngd sin_gen.pcf 
+par -w -intstyle ise -ol high -mt off sin_gen_map.ncd sin_gen.ncd sin_gen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sin_gen.twx sin_gen.ncd -o sin_gen.twr sin_gen.pcf 
+bitgen -intstyle ise -f sin_gen.ut sin_gen.ncd 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc "C:/Users/msemakin/Desktop/takt_gen/takt_gen_connection (2).ucf" -p xc6slx45t-fgg484-3 sin_gen.ngc sin_gen.ngd  
+map -intstyle ise -p xc6slx45t-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o sin_gen_map.ncd sin_gen.ngd sin_gen.pcf 
+par -w -intstyle ise -ol high -mt off sin_gen_map.ncd sin_gen.ncd sin_gen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sin_gen.twx sin_gen.ncd -o sin_gen.twr sin_gen.pcf 
+bitgen -intstyle ise -f sin_gen.ut sin_gen.ncd 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc "C:/Users/msemakin/Desktop/takt_gen/takt_gen_connection (2).ucf" -p xc6slx45t-fgg484-3 sin_gen.ngc sin_gen.ngd  
+map -intstyle ise -p xc6slx45t-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o sin_gen_map.ncd sin_gen.ngd sin_gen.pcf 
+par -w -intstyle ise -ol high -mt off sin_gen_map.ncd sin_gen.ncd sin_gen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sin_gen.twx sin_gen.ncd -o sin_gen.twr sin_gen.pcf 
+bitgen -intstyle ise -f sin_gen.ut sin_gen.ncd 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc "C:/Users/msemakin/Desktop/takt_gen/takt_gen_connection (2).ucf" -p xc6slx45t-fgg484-3 sin_gen.ngc sin_gen.ngd  
+map -intstyle ise -p xc6slx45t-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o sin_gen_map.ncd sin_gen.ngd sin_gen.pcf 
+par -w -intstyle ise -ol high -mt off sin_gen_map.ncd sin_gen.ncd sin_gen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sin_gen.twx sin_gen.ncd -o sin_gen.twr sin_gen.pcf 
+bitgen -intstyle ise -f sin_gen.ut sin_gen.ncd 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc "C:/Users/msemakin/Desktop/takt_gen/takt_gen_connection (2).ucf" -p xc6slx45t-fgg484-3 sin_gen.ngc sin_gen.ngd  
+map -intstyle ise -p xc6slx45t-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o sin_gen_map.ncd sin_gen.ngd sin_gen.pcf 
+par -w -intstyle ise -ol high -mt off sin_gen_map.ncd sin_gen.ncd sin_gen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sin_gen.twx sin_gen.ncd -o sin_gen.twr sin_gen.pcf 
+bitgen -intstyle ise -f sin_gen.ut sin_gen.ncd 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc "C:/Users/msemakin/Desktop/takt_gen/takt_gen_connection (2).ucf" -p xc6slx45t-fgg484-3 sin_gen.ngc sin_gen.ngd  
+map -intstyle ise -p xc6slx45t-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o sin_gen_map.ncd sin_gen.ngd sin_gen.pcf 
+par -w -intstyle ise -ol high -mt off sin_gen_map.ncd sin_gen.ncd sin_gen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sin_gen.twx sin_gen.ncd -o sin_gen.twr sin_gen.pcf 
+bitgen -intstyle ise -f sin_gen.ut sin_gen.ncd 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc "C:/Users/msemakin/Desktop/takt_gen/takt_gen_connection (2).ucf" -p xc6slx45t-fgg484-3 sin_gen.ngc sin_gen.ngd  
+map -intstyle ise -p xc6slx45t-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o sin_gen_map.ncd sin_gen.ngd sin_gen.pcf 
+par -w -intstyle ise -ol high -mt off sin_gen_map.ncd sin_gen.ncd sin_gen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sin_gen.twx sin_gen.ncd -o sin_gen.twr sin_gen.pcf 
+bitgen -intstyle ise -f sin_gen.ut sin_gen.ncd 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc "C:/Users/msemakin/Desktop/takt_gen/takt_gen_connection (2).ucf" -p xc6slx45t-fgg484-3 sin_gen.ngc sin_gen.ngd  
+map -intstyle ise -p xc6slx45t-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o sin_gen_map.ncd sin_gen.ngd sin_gen.pcf 
+par -w -intstyle ise -ol high -mt off sin_gen_map.ncd sin_gen.ncd sin_gen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sin_gen.twx sin_gen.ncd -o sin_gen.twr sin_gen.pcf 
+bitgen -intstyle ise -f sin_gen.ut sin_gen.ncd 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc "C:/Users/msemakin/Desktop/takt_gen/takt_gen_connection (2).ucf" -p xc6slx45t-fgg484-3 sin_gen.ngc sin_gen.ngd  
+map -intstyle ise -p xc6slx45t-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o sin_gen_map.ncd sin_gen.ngd sin_gen.pcf 
+par -w -intstyle ise -ol high -mt off sin_gen_map.ncd sin_gen.ncd sin_gen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sin_gen.twx sin_gen.ncd -o sin_gen.twr sin_gen.pcf 
+bitgen -intstyle ise -f sin_gen.ut sin_gen.ncd 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc "C:/Users/msemakin/Desktop/takt_gen/takt_gen_connection (2).ucf" -p xc6slx45t-fgg484-3 sin_gen.ngc sin_gen.ngd  
+map -intstyle ise -p xc6slx45t-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o sin_gen_map.ncd sin_gen.ngd sin_gen.pcf 
+par -w -intstyle ise -ol high -mt off sin_gen_map.ncd sin_gen.ncd sin_gen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sin_gen.twx sin_gen.ncd -o sin_gen.twr sin_gen.pcf 
+bitgen -intstyle ise -f sin_gen.ut sin_gen.ncd 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc "C:/Users/msemakin/Desktop/takt_gen/takt_gen_connection (2).ucf" -p xc6slx45t-fgg484-3 sin_gen.ngc sin_gen.ngd  
+map -intstyle ise -p xc6slx45t-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o sin_gen_map.ncd sin_gen.ngd sin_gen.pcf 
+par -w -intstyle ise -ol high -mt off sin_gen_map.ncd sin_gen.ncd sin_gen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sin_gen.twx sin_gen.ncd -o sin_gen.twr sin_gen.pcf 
+bitgen -intstyle ise -f sin_gen.ut sin_gen.ncd 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc "C:/Users/msemakin/Desktop/takt_gen/takt_gen_connection (2).ucf" -p xc6slx45t-fgg484-3 sin_gen.ngc sin_gen.ngd  
+map -intstyle ise -p xc6slx45t-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o sin_gen_map.ncd sin_gen.ngd sin_gen.pcf 
+par -w -intstyle ise -ol high -mt off sin_gen_map.ncd sin_gen.ncd sin_gen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sin_gen.twx sin_gen.ncd -o sin_gen.twr sin_gen.pcf 
+bitgen -intstyle ise -f sin_gen.ut sin_gen.ncd 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc "C:/Users/msemakin/Desktop/takt_gen/takt_gen_connection (2).ucf" -p xc6slx45t-fgg484-3 sin_gen.ngc sin_gen.ngd  
+map -intstyle ise -p xc6slx45t-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o sin_gen_map.ncd sin_gen.ngd sin_gen.pcf 
+par -w -intstyle ise -ol high -mt off sin_gen_map.ncd sin_gen.ncd sin_gen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sin_gen.twx sin_gen.ncd -o sin_gen.twr sin_gen.pcf 
+bitgen -intstyle ise -f sin_gen.ut sin_gen.ncd 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc "C:/Users/msemakin/Desktop/takt_gen/takt_gen_connection (2).ucf" -p xc6slx45t-fgg484-3 sin_gen.ngc sin_gen.ngd  
+map -intstyle ise -p xc6slx45t-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o sin_gen_map.ncd sin_gen.ngd sin_gen.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc "C:/Users/msemakin/Desktop/takt_gen/takt_gen_connection (2).ucf" -p xc6slx45t-fgg484-3 sin_gen.ngc sin_gen.ngd  
+map -intstyle ise -p xc6slx45t-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o sin_gen_map.ncd sin_gen.ngd sin_gen.pcf 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc "C:/Users/msemakin/Desktop/takt_gen/takt_gen_connection (2).ucf" -p xc6slx45t-fgg484-3 sin_gen.ngc sin_gen.ngd  
+map -intstyle ise -p xc6slx45t-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o sin_gen_map.ncd sin_gen.ngd sin_gen.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc "C:/Users/msemakin/Desktop/takt_gen/takt_gen_connection (2).ucf" -p xc6slx45t-fgg484-3 sin_gen.ngc sin_gen.ngd  
+map -intstyle ise -p xc6slx45t-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o sin_gen_map.ncd sin_gen.ngd sin_gen.pcf 
+par -w -intstyle ise -ol high -mt off sin_gen_map.ncd sin_gen.ncd sin_gen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sin_gen.twx sin_gen.ncd -o sin_gen.twr sin_gen.pcf 
+bitgen -intstyle ise -f sin_gen.ut sin_gen.ncd 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc "C:/Users/msemakin/Desktop/takt_gen/takt_gen_connection (2).ucf" -p xc6slx45t-fgg484-3 sin_gen.ngc sin_gen.ngd  
+map -intstyle ise -p xc6slx45t-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o sin_gen_map.ncd sin_gen.ngd sin_gen.pcf 
+par -w -intstyle ise -ol high -mt off sin_gen_map.ncd sin_gen.ncd sin_gen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sin_gen.twx sin_gen.ncd -o sin_gen.twr sin_gen.pcf 
+bitgen -intstyle ise -f sin_gen.ut sin_gen.ncd 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc "C:/Users/msemakin/Desktop/takt_gen/takt_gen_connection (2).ucf" -p xc6slx45t-fgg484-3 sin_gen.ngc sin_gen.ngd  
+map -intstyle ise -p xc6slx45t-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o sin_gen_map.ncd sin_gen.ngd sin_gen.pcf 
+par -w -intstyle ise -ol high -mt off sin_gen_map.ncd sin_gen.ncd sin_gen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sin_gen.twx sin_gen.ncd -o sin_gen.twr sin_gen.pcf 
+bitgen -intstyle ise -f sin_gen.ut sin_gen.ncd 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc "C:/Users/msemakin/Desktop/takt_gen/takt_gen_connection (2).ucf" -p xc6slx45t-fgg484-3 sin_gen.ngc sin_gen.ngd  
+map -intstyle ise -p xc6slx45t-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o sin_gen_map.ncd sin_gen.ngd sin_gen.pcf 
+par -w -intstyle ise -ol high -mt off sin_gen_map.ncd sin_gen.ncd sin_gen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sin_gen.twx sin_gen.ncd -o sin_gen.twr sin_gen.pcf 
+bitgen -intstyle ise -f sin_gen.ut sin_gen.ncd 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc "C:/Users/msemakin/Desktop/takt_gen/takt_gen_connection (2).ucf" -p xc6slx45t-fgg484-3 sin_gen.ngc sin_gen.ngd  
+map -intstyle ise -p xc6slx45t-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o sin_gen_map.ncd sin_gen.ngd sin_gen.pcf 
+par -w -intstyle ise -ol high -mt off sin_gen_map.ncd sin_gen.ncd sin_gen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sin_gen.twx sin_gen.ncd -o sin_gen.twr sin_gen.pcf 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc "C:/Users/msemakin/Desktop/takt_gen/takt_gen_connection (2).ucf" -p xc6slx45t-fgg484-3 sin_gen.ngc sin_gen.ngd  
+map -intstyle ise -p xc6slx45t-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o sin_gen_map.ncd sin_gen.ngd sin_gen.pcf 
+par -w -intstyle ise -ol high -mt off sin_gen_map.ncd sin_gen.ncd sin_gen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sin_gen.twx sin_gen.ncd -o sin_gen.twr sin_gen.pcf 
+bitgen -intstyle ise -f sin_gen.ut sin_gen.ncd 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc "C:/Users/msemakin/Desktop/takt_gen/takt_gen_connection (2).ucf" -p xc6slx45t-fgg484-3 sin_gen.ngc sin_gen.ngd  
+map -intstyle ise -p xc6slx45t-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o sin_gen_map.ncd sin_gen.ngd sin_gen.pcf 
+par -w -intstyle ise -ol high -mt off sin_gen_map.ncd sin_gen.ncd sin_gen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sin_gen.twx sin_gen.ncd -o sin_gen.twr sin_gen.pcf 
+bitgen -intstyle ise -f sin_gen.ut sin_gen.ncd 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc "C:/Users/msemakin/Desktop/takt_gen/takt_gen_connection (2).ucf" -p xc6slx45t-fgg484-3 sin_gen.ngc sin_gen.ngd  
+map -intstyle ise -p xc6slx45t-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o sin_gen_map.ncd sin_gen.ngd sin_gen.pcf 
+par -w -intstyle ise -ol high -mt off sin_gen_map.ncd sin_gen.ncd sin_gen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sin_gen.twx sin_gen.ncd -o sin_gen.twr sin_gen.pcf 
+bitgen -intstyle ise -f sin_gen.ut sin_gen.ncd 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc "C:/Users/msemakin/Desktop/takt_gen/takt_gen_connection (2).ucf" -p xc6slx45t-fgg484-3 sin_gen.ngc sin_gen.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc "C:/Users/msemakin/Desktop/takt_gen/takt_gen_connection (2).ucf" -p xc6slx45t-fgg484-3 sin_gen.ngc sin_gen.ngd  
+map -intstyle ise -p xc6slx45t-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o sin_gen_map.ncd sin_gen.ngd sin_gen.pcf 
+par -w -intstyle ise -ol high -mt off sin_gen_map.ncd sin_gen.ncd sin_gen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sin_gen.twx sin_gen.ncd -o sin_gen.twr sin_gen.pcf 
+bitgen -intstyle ise -f sin_gen.ut sin_gen.ncd 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc "C:/Users/msemakin/Desktop/takt_gen/takt_gen_connection (2).ucf" -p xc6slx45t-fgg484-3 sin_gen.ngc sin_gen.ngd  
+map -intstyle ise -p xc6slx45t-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o sin_gen_map.ncd sin_gen.ngd sin_gen.pcf 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc "C:/Users/msemakin/Desktop/takt_gen/takt_gen_connection (2).ucf" -p xc6slx45t-fgg484-3 sin_gen.ngc sin_gen.ngd  
+map -intstyle ise -p xc6slx45t-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o sin_gen_map.ncd sin_gen.ngd sin_gen.pcf 
+map -intstyle ise -p xc6slx45t-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o sin_gen_map.ncd sin_gen.ngd sin_gen.pcf 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc "C:/Users/msemakin/Desktop/takt_gen/takt_gen_connection (2).ucf" -p xc6slx45t-fgg484-3 sin_gen.ngc sin_gen.ngd  
+map -intstyle ise -p xc6slx45t-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o sin_gen_map.ncd sin_gen.ngd sin_gen.pcf 
+par -w -intstyle ise -ol high -mt off sin_gen_map.ncd sin_gen.ncd sin_gen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sin_gen.twx sin_gen.ncd -o sin_gen.twr sin_gen.pcf 
+bitgen -intstyle ise -f sin_gen.ut sin_gen.ncd 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc "C:/Users/msemakin/Desktop/takt_gen/takt_gen_connection (2).ucf" -p xc6slx45t-fgg484-3 sin_gen.ngc sin_gen.ngd  
+map -intstyle ise -p xc6slx45t-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o sin_gen_map.ncd sin_gen.ngd sin_gen.pcf 
+par -w -intstyle ise -ol high -mt off sin_gen_map.ncd sin_gen.ncd sin_gen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sin_gen.twx sin_gen.ncd -o sin_gen.twr sin_gen.pcf 
+bitgen -intstyle ise -f sin_gen.ut sin_gen.ncd 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc "C:/Users/msemakin/Desktop/takt_gen/takt_gen_connection (2).ucf" -p xc6slx45t-fgg484-3 sin_gen.ngc sin_gen.ngd  
+map -intstyle ise -p xc6slx45t-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o sin_gen_map.ncd sin_gen.ngd sin_gen.pcf 
+par -w -intstyle ise -ol high -mt off sin_gen_map.ncd sin_gen.ncd sin_gen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sin_gen.twx sin_gen.ncd -o sin_gen.twr sin_gen.pcf 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc "C:/Users/msemakin/Desktop/takt_gen/takt_gen_connection (2).ucf" -p xc6slx45t-fgg484-3 sin_gen.ngc sin_gen.ngd  
+map -intstyle ise -p xc6slx45t-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o sin_gen_map.ncd sin_gen.ngd sin_gen.pcf 
+par -w -intstyle ise -ol high -mt off sin_gen_map.ncd sin_gen.ncd sin_gen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sin_gen.twx sin_gen.ncd -o sin_gen.twr sin_gen.pcf 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc "C:/Users/msemakin/Desktop/takt_gen/takt_gen_connection (2).ucf" -p xc6slx45t-fgg484-3 sin_gen.ngc sin_gen.ngd  
+map -intstyle ise -p xc6slx45t-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o sin_gen_map.ncd sin_gen.ngd sin_gen.pcf 
+par -w -intstyle ise -ol high -mt off sin_gen_map.ncd sin_gen.ncd sin_gen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sin_gen.twx sin_gen.ncd -o sin_gen.twr sin_gen.pcf 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc "C:/Users/msemakin/Desktop/takt_gen/takt_gen_connection (2).ucf" -p xc6slx45t-fgg484-3 sin_gen.ngc sin_gen.ngd  
+map -intstyle ise -p xc6slx45t-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o sin_gen_map.ncd sin_gen.ngd sin_gen.pcf 
+par -w -intstyle ise -ol high -mt off sin_gen_map.ncd sin_gen.ncd sin_gen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sin_gen.twx sin_gen.ncd -o sin_gen.twr sin_gen.pcf 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc "C:/Users/msemakin/Desktop/takt_gen/takt_gen_connection (2).ucf" -p xc6slx45t-fgg484-3 sin_gen.ngc sin_gen.ngd  
+map -intstyle ise -p xc6slx45t-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o sin_gen_map.ncd sin_gen.ngd sin_gen.pcf 
+par -w -intstyle ise -ol high -mt off sin_gen_map.ncd sin_gen.ncd sin_gen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sin_gen.twx sin_gen.ncd -o sin_gen.twr sin_gen.pcf 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc "C:/Users/msemakin/Desktop/takt_gen/takt_gen_connection (2).ucf" -p xc6slx45t-fgg484-3 sin_gen.ngc sin_gen.ngd  
+map -intstyle ise -p xc6slx45t-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o sin_gen_map.ncd sin_gen.ngd sin_gen.pcf 
+par -w -intstyle ise -ol high -mt off sin_gen_map.ncd sin_gen.ncd sin_gen.pcf 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc "C:/Users/msemakin/Desktop/takt_gen/takt_gen_connection (2).ucf" -p xc6slx45t-fgg484-3 sin_gen.ngc sin_gen.ngd  
+map -intstyle ise -p xc6slx45t-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o sin_gen_map.ncd sin_gen.ngd sin_gen.pcf 
+par -w -intstyle ise -ol high -mt off sin_gen_map.ncd sin_gen.ncd sin_gen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sin_gen.twx sin_gen.ncd -o sin_gen.twr sin_gen.pcf 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc "C:/Users/msemakin/Desktop/takt_gen/takt_gen_connection (2).ucf" -p xc6slx45t-fgg484-3 sin_gen.ngc sin_gen.ngd  
+map -intstyle ise -p xc6slx45t-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o sin_gen_map.ncd sin_gen.ngd sin_gen.pcf 
+par -w -intstyle ise -ol high -mt off sin_gen_map.ncd sin_gen.ncd sin_gen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sin_gen.twx sin_gen.ncd -o sin_gen.twr sin_gen.pcf 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc "C:/Users/msemakin/Desktop/takt_gen/takt_gen_connection (2).ucf" -p xc6slx45t-fgg484-3 sin_gen.ngc sin_gen.ngd  
+map -intstyle ise -p xc6slx45t-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o sin_gen_map.ncd sin_gen.ngd sin_gen.pcf 
+par -w -intstyle ise -ol high -mt off sin_gen_map.ncd sin_gen.ncd sin_gen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sin_gen.twx sin_gen.ncd -o sin_gen.twr sin_gen.pcf 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc "C:/Users/msemakin/Desktop/takt_gen/takt_gen_connection (2).ucf" -p xc6slx45t-fgg484-3 sin_gen.ngc sin_gen.ngd  
+map -intstyle ise -p xc6slx45t-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o sin_gen_map.ncd sin_gen.ngd sin_gen.pcf 
+par -w -intstyle ise -ol high -mt off sin_gen_map.ncd sin_gen.ncd sin_gen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sin_gen.twx sin_gen.ncd -o sin_gen.twr sin_gen.pcf 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc "C:/Users/msemakin/Desktop/takt_gen/takt_gen_connection (2).ucf" -p xc6slx45t-fgg484-3 sin_gen.ngc sin_gen.ngd  
+map -intstyle ise -p xc6slx45t-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o sin_gen_map.ncd sin_gen.ngd sin_gen.pcf 
+par -w -intstyle ise -ol high -mt off sin_gen_map.ncd sin_gen.ncd sin_gen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sin_gen.twx sin_gen.ncd -o sin_gen.twr sin_gen.pcf 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc "C:/Users/msemakin/Desktop/takt_gen/takt_gen_connection (2).ucf" -p xc6slx45t-fgg484-3 sin_gen.ngc sin_gen.ngd  
+map -intstyle ise -p xc6slx45t-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o sin_gen_map.ncd sin_gen.ngd sin_gen.pcf 
+par -w -intstyle ise -ol high -mt off sin_gen_map.ncd sin_gen.ncd sin_gen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sin_gen.twx sin_gen.ncd -o sin_gen.twr sin_gen.pcf 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc "C:/Users/msemakin/Desktop/takt_gen/takt_gen_connection (2).ucf" -p xc6slx45t-fgg484-3 sin_gen.ngc sin_gen.ngd  
+map -intstyle ise -p xc6slx45t-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o sin_gen_map.ncd sin_gen.ngd sin_gen.pcf 
+par -w -intstyle ise -ol high -mt off sin_gen_map.ncd sin_gen.ncd sin_gen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sin_gen.twx sin_gen.ncd -o sin_gen.twr sin_gen.pcf 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx45t-fgg484-3 sin_gen.ngc sin_gen.ngd  
+map -intstyle ise -p xc6slx45t-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o sin_gen_map.ncd sin_gen.ngd sin_gen.pcf 
+par -w -intstyle ise -ol high -mt off sin_gen_map.ncd sin_gen.ncd sin_gen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sin_gen.twx sin_gen.ncd -o sin_gen.twr sin_gen.pcf 
+bitgen -intstyle ise -f sin_gen.ut sin_gen.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sin_gen_connection.ucf -p xc6slx45t-fgg484-3 sin_gen.ngc sin_gen.ngd  
+map -intstyle ise -p xc6slx45t-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o sin_gen_map.ncd sin_gen.ngd sin_gen.pcf 
+par -w -intstyle ise -ol high -mt off sin_gen_map.ncd sin_gen.ncd sin_gen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sin_gen.twx sin_gen.ncd -o sin_gen.twr sin_gen.pcf -ucf sin_gen_connection.ucf 
+bitgen -intstyle ise -f sin_gen.ut sin_gen.ncd 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim sin_gen.ngc sin_gen_synthesis.v 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sin_gen_connection.ucf -p xc6slx45t-fgg484-3 sin_gen.ngc sin_gen.ngd  
+map -intstyle ise -p xc6slx45t-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o sin_gen_map.ncd sin_gen.ngd sin_gen.pcf 
+par -w -intstyle ise -ol high -mt off sin_gen_map.ncd sin_gen.ncd sin_gen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sin_gen.twx sin_gen.ncd -o sin_gen.twr sin_gen.pcf -ucf sin_gen_connection.ucf 
+bitgen -intstyle ise -f sin_gen.ut sin_gen.ncd 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sin_gen_connection.ucf -p xc6slx45t-fgg484-3 sin_gen.ngc sin_gen.ngd  
+map -intstyle ise -p xc6slx45t-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o sin_gen_map.ncd sin_gen.ngd sin_gen.pcf 
+par -w -intstyle ise -ol high -mt off sin_gen_map.ncd sin_gen.ncd sin_gen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sin_gen.twx sin_gen.ncd -o sin_gen.twr sin_gen.pcf -ucf sin_gen_connection.ucf 
+bitgen -intstyle ise -f sin_gen.ut sin_gen.ncd 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sin_gen_connection.ucf -p xc6slx45t-fgg484-3 sin_gen.ngc sin_gen.ngd  
+map -intstyle ise -p xc6slx45t-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o sin_gen_map.ncd sin_gen.ngd sin_gen.pcf 
+par -w -intstyle ise -ol high -mt off sin_gen_map.ncd sin_gen.ncd sin_gen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sin_gen.twx sin_gen.ncd -o sin_gen.twr sin_gen.pcf -ucf sin_gen_connection.ucf 
+bitgen -intstyle ise -f sin_gen.ut sin_gen.ncd 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sin_gen_connection.ucf -p xc6slx45t-fgg484-3 sin_gen.ngc sin_gen.ngd  
+map -intstyle ise -p xc6slx45t-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o sin_gen_map.ncd sin_gen.ngd sin_gen.pcf 
+par -w -intstyle ise -ol high -mt off sin_gen_map.ncd sin_gen.ncd sin_gen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sin_gen.twx sin_gen.ncd -o sin_gen.twr sin_gen.pcf -ucf sin_gen_connection.ucf 
+bitgen -intstyle ise -f sin_gen.ut sin_gen.ncd 
+xst -intstyle ise -ifn "C:/Xilinx/Project/sin_gen/sin_gen.xst" -ofn "C:/Xilinx/Project/sin_gen/sin_gen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sin_gen_connection.ucf -p xc6slx45t-fgg484-3 sin_gen.ngc sin_gen.ngd  
+map -intstyle ise -p xc6slx45t-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o sin_gen_map.ncd sin_gen.ngd sin_gen.pcf 
+par -w -intstyle ise -ol high -mt off sin_gen_map.ncd sin_gen.ncd sin_gen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sin_gen.twx sin_gen.ncd -o sin_gen.twr sin_gen.pcf -ucf sin_gen_connection.ucf 
+bitgen -intstyle ise -f sin_gen.ut sin_gen.ncd 

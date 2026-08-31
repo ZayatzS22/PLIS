@@ -1,0 +1,17 @@
+PROMGEN: Xilinx Prom Generator M.63c
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+promgen -w -p mcs -c FF -o C:\Xilinx\Project\sin_gen\//sin_gen -s 4096 -u 00000000 C:/Xilinx/Project/sin_gen/sin_gen.bit -bpi_dc serial -data_width 16 
+
+PROM C:\Xilinx\Project\sin_gen\sin_gen.prm map: Wed Apr 08 13:57:44 2026
+
+Calculating PROM checksum with fill value ff
+
+Format        Mcs86 (32-bit)
+Size          4096K
+PROM start    0000:0000
+PROM end      003f:ffff
+PROM checksum 293a1844
+
+        Addr1        Addr2                     Date File(s)
+    0000:0000    0016:a673     Apr 08 13:55:40 2026 C:/Xilinx/Project/sin_gen/sin_gen.bit

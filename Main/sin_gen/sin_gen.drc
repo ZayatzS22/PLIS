@@ -1,0 +1,8 @@
+Release 12.2 Drc M.63c (nt64)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+Thu Aug 06 16:15:35 2026
+
+drc -z sin_gen.ncd sin_gen.pcf
+
+DRC detected 0 errors and 0 warnings.

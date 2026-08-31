@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SP605 — руководство по плате</title><link rel="stylesheet" href="assets/style.css"></head>
+<body>
+<header class="hero"><div class="wrap"><span class="badge">SP605 · XC6SLX45T-3FGG484</span>
+<h1>SP605 — руководство по плате</h1><p>Русская HTML-редакция практических разделов UG526.</p>
+<div class="hero-actions"><a href="pin_navigator.html">Найти пин</a><a href="docs/SP605_common_pins_RU.ucf">Открыть UCF</a><a href="docs/SP605_UG526_RU_adapted.pdf">PDF по плате</a></div>
+</div></header>
+<nav class="topnav"><div class="inner">
+<a href="index.html" class="">Главная</a>
+<a href="sp605_ug526_ru.html" class="active">Плата SP605</a>
+<a href="ug385_fgg484_ru.html" class="">Корпус FGG484</a>
+<a href="pin_navigator.html" class="">Навигатор пинов</a>
+<a href="docs/SP605_common_pins_RU.ucf">UCF</a>
+</div></nav><main class="wrap">
+<div class="mobile-toc"><select class="searchbox" data-jump><option value="">Перейти к разделу…</option><option value="overview">1. Назначение и основные компоненты</option><option value="fpga">2. Маркировка FPGA</option><option value="jtag">3. Конфигурирование и USB-JTAG</option><option value="clock">4. Тактовые источники</option><option value="uart">5. USB-UART CP2103</option><option value="memory">6. Память</option><option value="io">7. LED, кнопки и DIP</option><option value="j55">8. Разъём J55</option><option value="interfaces">9. Другие интерфейсы</option><option value="power">10. Питание и I/O-банки</option><option value="ucf">11. UCF в Xilinx ISE</option><option value="test">12. Проверка байта синхронизации</option><option value="trouble">13. Частые проблемы</option></select></div>
+<div class="layout"><aside class="sidebar"><b>Содержание</b><a href="#overview">1. Назначение и основные компоненты</a><a href="#fpga">2. Маркировка FPGA</a><a href="#jtag">3. Конфигурирование и USB-JTAG</a><a href="#clock">4. Тактовые источники</a><a href="#uart">5. USB-UART CP2103</a><a href="#memory">6. Память</a><a href="#io">7. LED, кнопки и DIP</a><a href="#j55">8. Разъём J55</a><a href="#interfaces">9. Другие интерфейсы</a><a href="#power">10. Питание и I/O-банки</a><a href="#ucf">11. UCF в Xilinx ISE</a><a href="#test">12. Проверка байта синхронизации</a><a href="#trouble">13. Частые проблемы</a></aside><div class="content">
+<section class="card"><img class="board-img" src="assets/sp605_board_photo.png" alt="Плата SP605"><p class="note">Для поиска конкретного вывода откройте <a href="pin_navigator.html">интерактивный навигатор</a>.</p></section>
+<section class="doc-section" id="overview"><h2>1. Назначение и основные компоненты</h2>
+<p>SP605 — отладочная плата для проектов на Spartan-6 LXT. Она подходит для цифровой логики, интерфейсов, обработки данных и высокоскоростных последовательных каналов.</p>
+<ul><li>FPGA XC6SLX45T-3FGG484.</li><li>128 МБ DDR3.</li><li>USB-JTAG и отдельный USB-UART CP2103.</li><li>Генераторы 27 МГц и 200 МГц.</li><li>Ethernet, PCIe, SFP, DVI, FMC LPC и SMA.</li></ul>
+</section><section class="doc-section" id="fpga"><h2>2. Маркировка FPGA</h2>
+<table><tr><th>Часть</th><th>Значение</th></tr><tr><td>XC6S</td><td>Семейство Spartan-6</td></tr><tr><td>LX45T</td><td>LXT-устройство с GTP-трансиверами</td></tr><tr><td>-3</td><td>Speed grade</td></tr><tr><td>FGG484</td><td>Бессвинцовый BGA-корпус, 484 шара</td></tr></table>
+<p>Обозначения B21, AB13 и F5 — координаты шаров корпуса FPGA, а не номера контактов внешнего разъёма.</p>
+</section><section class="doc-section" id="jtag"><h2>3. Конфигурирование и USB-JTAG</h2>
+<p>Загрузка через JTAG временная: после выключения питания FPGA очищается. Для теста это самый простой способ.</p>
+<ol><li>Соберите проект и получите <code>.bit</code>.</li><li>Откройте iMPACT → Boundary Scan.</li><li>Initialize Chain.</li><li>Назначьте FPGA новый <code>.bit</code>.</li><li>Выполните Program.</li></ol>
+<div class="note">USB-JTAG и USB-UART — разные разъёмы. UART идёт через отдельный Mini-USB J23.</div>
+</section><section class="doc-section" id="clock"><h2>4. Тактовые источники</h2>
+<table><tr><th>Источник</th><th>Частота</th><th>Пины</th><th>Комментарий</th></tr>
+<tr><td>X2 USER_CLOCK</td><td>27 МГц</td><td>AB13</td><td>Однотактный генератор</td></tr>
+<tr><td>U6 SYSCLK</td><td>200 МГц</td><td>K21/K22</td><td>Дифференциальный LVDS</td></tr>
+<tr><td>SMA clock</td><td>Внешняя</td><td>M20/M19</td><td>Дифференциальный вход</td></tr></table>
+<div class="code-wrap"><button class="copy-btn">Копировать</button><pre>NET &quot;clk&quot; LOC = &quot;AB13&quot;;
+NET &quot;clk&quot; TNM_NET = &quot;clk&quot;;
+TIMESPEC &quot;TS_clk&quot; = PERIOD &quot;clk&quot; 37.037 ns HIGH 50%;</pre></div>
+<div class="warning">Параметр <code>CLK_FREQ</code> в UART должен совпадать с реальной частотой <code>clk</code>.</div>
+</section><section class="doc-section" id="uart"><h2>5. USB-UART CP2103</h2>
+<table><tr><th>Пин</th><th>Имя сети</th><th>Направление</th><th>Назначение</th></tr>
+<tr><td>B21</td><td>USB_1_RX</td><td>FPGA → ПК</td><td>TX FPGA, вход RX CP2103</td></tr>
+<tr><td>H17</td><td>USB_1_TX</td><td>ПК → FPGA</td><td>RX FPGA, выход TX CP2103</td></tr>
+<tr><td>F18</td><td>USB_1_CTS</td><td>FPGA → CP2103</td><td>Flow control</td></tr>
+<tr><td>F19</td><td>USB_1_RTS</td><td>CP2103 → FPGA</td><td>Flow control</td></tr></table>
+<div class="success"><b>Для передачи с FPGA на компьютер используется B21.</b></div>
+<div class="code-wrap"><button class="copy-btn">Копировать</button><pre>115200 бод
+8 бит данных
+Без чётности
+1 стоповый бит
+Flow control: None
+Режим отображения: HEX</pre></div></section><section class="doc-section" id="memory"><h2>6. Память</h2>
+<table><tr><th>Устройство</th><th>Назначение</th></tr>
+<tr><td>DDR3 128 МБ</td><td>Оперативная память, обычно через MCB/MIG</td></tr>
+<tr><td>SPI x4 Flash</td><td>Последовательное хранение конфигурации/данных</td></tr>
+<tr><td>BPI Flash</td><td>Параллельная Flash</td></tr>
+<tr><td>System ACE CF</td><td>Загрузка образов с CompactFlash</td></tr></table>
+<p>Для текущего теста UART внешняя память не требуется.</p>
+</section><section class="doc-section" id="io"><h2>7. LED, кнопки и DIP</h2>
+<h3>Светодиоды — активный высокий уровень</h3>
+<table><tr><th>Пин</th><th>LED</th></tr><tr><td>D17</td><td>DS3 / LED0</td></tr><tr><td>AB4</td><td>DS4 / LED1</td></tr><tr><td>D21</td><td>DS5 / LED2</td></tr><tr><td>W15</td><td>DS6 / LED3</td></tr></table>
+<h3>Кнопки — при нажатии логическая 1</h3>
+<table><tr><th>Пин</th><th>Кнопка</th></tr><tr><td>F3</td><td>SW4</td></tr><tr><td>G6</td><td>SW7</td></tr><tr><td>F5</td><td>SW5</td></tr><tr><td>C1</td><td>SW8</td></tr><tr><td>H8</td><td>CPU_RESET / SW6</td></tr></table>
+<h3>DIP S2</h3><table><tr><th>Пин</th><th>Переключатель</th></tr><tr><td>C18</td><td>S2.1</td></tr><tr><td>Y6</td><td>S2.2</td></tr><tr><td>W6</td><td>S2.3</td></tr><tr><td>E4</td><td>S2.4</td></tr></table>
+</section><section class="doc-section" id="j55"><h2>8. Разъём J55</h2>
+<table><tr><th>Пин FPGA</th><th>Сеть</th><th>Контакт J55</th></tr>
+<tr><td>G7</td><td>GPIO_HEADER_0</td><td>1</td></tr><tr><td>H6</td><td>GPIO_HEADER_1</td><td>2</td></tr><tr><td>D1</td><td>GPIO_HEADER_2</td><td>3</td></tr><tr><td>R7</td><td>GPIO_HEADER_3</td><td>4</td></tr><tr><td>—</td><td>GND</td><td>5</td></tr><tr><td>—</td><td>3.3 В</td><td>6</td></tr></table>
+<div class="warning">Перед подключением внешнего устройства объедините земли и проверьте допустимые уровни напряжения.</div>
+</section><section class="doc-section" id="interfaces"><h2>9. Другие интерфейсы</h2>
+<table><tr><th>Интерфейс</th><th>Для чего</th></tr><tr><td>Ethernet</td><td>10/100/1000 Мбит/с, требуется MAC/IP-core</td></tr><tr><td>PCI Express</td><td>x1 Gen1 через GTP</td></tr><tr><td>SFP</td><td>Оптический/электрический высокоскоростной канал</td></tr><tr><td>DVI</td><td>Цифровое видео</td></tr><tr><td>FMC LPC</td><td>Мезонинные платы, VADJ 2.5 В</td></tr></table>
+</section><section class="doc-section" id="power"><h2>10. Питание и I/O-банки</h2>
+<p>Выходные уровни определяются питанием VCCO соответствующего банка. Выбранный <code>IOSTANDARD</code> должен совпадать с напряжением банка и подключённой периферии.</p>
+<ul><li>Не переставляйте перемычки при включённой плате.</li><li>Не подавайте 5 В напрямую на FPGA I/O.</li><li>Проверяйте схему перед подключением внешних модулей.</li></ul>
+</section><section class="doc-section" id="ucf"><h2>11. UCF в Xilinx ISE</h2>
+<p>UCF — обычный текстовый файл, связывающий порты top module с физическими пинами.</p>
+<div class="code-wrap"><button class="copy-btn">Копировать</button><pre>NET &quot;clk&quot;     LOC = &quot;AB13&quot;;
+NET &quot;reset&quot;   LOC = &quot;F5&quot;;
+NET &quot;led&quot;     LOC = &quot;AB4&quot;;
+NET &quot;uart_tx&quot; LOC = &quot;B21&quot;;
+
+NET &quot;clk&quot; TNM_NET = &quot;clk&quot;;
+TIMESPEC &quot;TS_clk&quot; = PERIOD &quot;clk&quot; 37.037 ns HIGH 50%;</pre></div>
+<ol><li>Project → New Source → Implementation Constraints File.</li><li>Имена должны совпадать с портами Verilog.</li><li>После изменения UCF заново выполните Implement Design и Generate Programming File.</li></ol>
+</section><section class="doc-section" id="test"><h2>12. Проверка байта синхронизации</h2>
+<p>Ожидаемый бинарный поток:</p>
+<div class="code-wrap"><button class="copy-btn">Копировать</button><pre>A5
+00 00 00 00
+01 00 01 00
+02 00 02 00
+...
+7F 00 7F 00
+A5
+...</pre></div>
+<p>Между маркерами передаётся 128 × 4 = 512 байт данных. Байт <code>A5</code> смотрите в HEX-режиме.</p>
+</section><section class="doc-section" id="trouble"><h2>13. Частые проблемы</h2>
+<table><tr><th>Симптом</th><th>Проверка</th></tr>
+<tr><td>Нет UART</td><td><code>uart_tx</code> должен быть B21, кабель подключён к J23</td></tr>
+<tr><td>Мусор</td><td>CLK_FREQ, частота AB13 и 115200 8N1</td></tr>
+<tr><td>A5 не видно</td><td>Терминал должен показывать HEX</td></tr>
+<tr><td>UCF не сработал</td><td>Пересоберите Implement и Generate Programming File</td></tr>
+<tr><td>Warning про constant/trimmed</td><td>Обычно нормальная оптимизация, главное — отсутствие Errors</td></tr></table>
+</section></div></div>
+</main>
+<footer class="footer">Неофициальная русская адаптация. Номера выводов и названия сигналов сохранены как в документации AMD/Xilinx.</footer>
+<script src="assets/app.js"></script></body></html>

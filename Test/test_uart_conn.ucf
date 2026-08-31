@@ -1,0 +1,10 @@
+# SP605 / XC6SLX45T-3FGG484
+# UART 14-bit test, no ADC
+
+NET "clk"      LOC = "AB13";
+NET "reset"    LOC = "F5";
+NET "led_ds4"  LOC = "AB4";
+NET "uart_tx"  LOC = "B21";
+
+NET "clk" TNM_NET = "clk";
+TIMESPEC "TS_clk" = PERIOD "clk" 37.037 ns HIGH 50%;

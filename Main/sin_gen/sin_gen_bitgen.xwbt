@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Xilinx\Project\sin_gen\sin_gen.ncd
+OUTFILE=C:\Xilinx\Project\sin_gen\sin_gen.bit
+FAMILY=Spartan6
+PART=xc6slx45t-3fgg484
+WORKINGDIR=C:\Xilinx\Project\sin_gen
+LICENSE=WebPack
+USER_INFO=1777594329_210809015_202

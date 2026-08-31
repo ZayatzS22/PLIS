@@ -1,0 +1,645 @@
+Release 12.2 - xst M.63c (nt64)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.19 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.20 secs
+ 
+--> Reading design: sin_gen.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "sin_gen.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "sin_gen"
+Output Format                      : NGC
+Target Device                      : xc6slx45t-3-fgg484
+
+---- Source Options
+Top Module Name                    : sin_gen
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file \"\Xilinx\Project\sin_gen\ipcore_dir/sine_lut.v\" into library work
+Parsing module <sine_lut>.
+Analyzing Verilog file \"\Xilinx\Project\sin_gen\uart_tx.v\" into library work
+Parsing module <uart_transmitter>.
+Analyzing Verilog file \"\Xilinx\Project\sin_gen\max5853_dual_cntrl.v\" into library work
+Parsing module <max5853_dual_cntrl>.
+Analyzing Verilog file \"\Xilinx\Project\sin_gen\ipcore_dir/cose_lut.v\" into library work
+Parsing module <cose_lut>.
+Analyzing Verilog file \"\Xilinx\Project\sin_gen\adc_receiver.v\" into library work
+Parsing module <adc_receiver>.
+Analyzing Verilog file \"\Xilinx\Project\sin_gen\sin_gen.v\" into library work
+Parsing module <sin_gen>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <sin_gen>.
+
+Elaborating module <sine_lut>.
+
+Elaborating module <cose_lut>.
+
+Elaborating module <max5853_dual_cntrl>.
+
+Elaborating module <adc_receiver>.
+
+Elaborating module <uart_transmitter>.
+WARNING:HDLCompiler:413 - "\Xilinx\Project\sin_gen\uart_tx.v" Line 65: Result of 4-bit expression is truncated to fit in 3-bit target.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <sin_gen>.
+    Related source file is "/xilinx/project/sin_gen/sin_gen.v".
+        PHASE_WIDTH = 24
+        LUT_ADDR_WIDTH = 8
+        FTW = 24'b000000001111001010111010
+        SYNC_MARKER = 8'b10100101
+        WIDTH_TAKT = 5
+    Found 6-bit register for signal <counter>.
+    Found 1-bit register for signal <takt_p>.
+    Found 8-bit register for signal <uart_data>.
+    Found 2-bit register for signal <byte_idx>.
+    Found 7-bit register for signal <frame_count>.
+    Found 1-bit register for signal <tx_start>.
+    Found 16-bit register for signal <adc_a>.
+    Found 16-bit register for signal <adc_b>.
+    Found 3-bit register for signal <state>.
+    Found 1-bit register for signal <tx_done_d>.
+    Found 24-bit register for signal <phase_acc>.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 12                                             |
+    | Inputs             | 5                                              |
+    | Outputs            | 4                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | reset (positive)                               |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 000                                            |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 24-bit adder for signal <phase_acc[23]_GND_1_o_add_1_OUT> created at line 68.
+    Found 6-bit adder for signal <counter[5]_GND_1_o_add_3_OUT> created at line 74.
+    Found 7-bit adder for signal <frame_count[6]_GND_1_o_add_18_OUT> created at line 195.
+    Found 2-bit adder for signal <byte_idx[1]_GND_1_o_add_21_OUT> created at line 199.
+    Found 8-bit 4-to-1 multiplexer for signal <byte_idx[1]_adc_b[15]_wide_mux_15_OUT> created at line 178.
+    Summary:
+	inferred   4 Adder/Subtractor(s).
+	inferred  82 D-type flip-flop(s).
+	inferred   4 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <sin_gen> synthesized.
+
+Synthesizing Unit <max5853_dual_cntrl>.
+    Related source file is "/xilinx/project/sin_gen/max5853_dual_cntrl.v".
+    Found 10-bit register for signal <dac_data>.
+    Found 1-bit register for signal <dac_clk>.
+    Found 6-bit register for signal <control_counter>.
+    Found 1-bit register for signal <run_mode>.
+    Found 2-bit register for signal <clk_div_cnt>.
+    Found 1-bit register for signal <dac_ctrl>.
+    Found 2-bit adder for signal <clk_div_cnt[1]_GND_4_o_add_1_OUT> created at line 44.
+    Found 6-bit adder for signal <control_counter[5]_GND_4_o_add_3_OUT> created at line 52.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  21 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <max5853_dual_cntrl> synthesized.
+
+Synthesizing Unit <adc_receiver>.
+    Related source file is "/xilinx/project/sin_gen/adc_receiver.v".
+    Found 1-bit register for signal <cs>.
+    Found 2-bit register for signal <state>.
+    Found 4-bit register for signal <bit_cnt>.
+    Found 4-bit register for signal <quiet_cnt>.
+    Found 16-bit register for signal <shift_a>.
+    Found 16-bit register for signal <shift_b>.
+    Found 16-bit register for signal <data_out_a>.
+    Found 16-bit register for signal <data_out_b>.
+    Found 1-bit register for signal <data_ready>.
+    Found 1-bit register for signal <sclk_prev>.
+    Found finite state machine <FSM_1> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 7                                              |
+    | Inputs             | 4                                              |
+    | Outputs            | 3                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | reset (positive)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 4-bit adder for signal <quiet_cnt[3]_GND_5_o_add_1_OUT> created at line 77.
+    Found 4-bit adder for signal <bit_cnt[3]_GND_5_o_add_6_OUT> created at line 89.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  75 D-type flip-flop(s).
+	inferred   3 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <adc_receiver> synthesized.
+
+Synthesizing Unit <uart_transmitter>.
+    Related source file is "/xilinx/project/sin_gen/uart_tx.v".
+        CLK_FREQ = 27000000
+        BAUD_RATE = 115200
+        DATA_BITS = 8
+    Found 1-bit register for signal <tx_pin>.
+    Found 1-bit register for signal <tx_done>.
+    Found 8-bit register for signal <clk_count>.
+    Found 3-bit register for signal <bit_index>.
+    Found 8-bit register for signal <tx_data_reg>.
+    Found 2-bit register for signal <state>.
+    Found finite state machine <FSM_2> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 9                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 3                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst (positive)                                 |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 3-bit adder for signal <bit_index[2]_GND_7_o_add_12_OUT> created at line 65.
+    Found 8-bit adder for signal <clk_count[7]_GND_7_o_add_20_OUT> created at line 78.
+    Found 1-bit 8-to-1 multiplexer for signal <bit_index[2]_tx_data_reg[7]_Mux_9_o> created at line 59.
+    Found 8-bit 4-to-1 multiplexer for signal <state[1]_clk_count[7]_wide_mux_26_OUT> created at line 37.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  21 D-type flip-flop(s).
+	inferred   8 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <uart_transmitter> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 10
+ 2-bit adder                                           : 2
+ 24-bit adder                                          : 1
+ 3-bit adder                                           : 1
+ 4-bit adder                                           : 2
+ 6-bit adder                                           : 2
+ 7-bit adder                                           : 1
+ 8-bit adder                                           : 1
+# Registers                                            : 30
+ 1-bit register                                        : 11
+ 10-bit register                                       : 1
+ 16-bit register                                       : 6
+ 2-bit register                                        : 2
+ 24-bit register                                       : 1
+ 3-bit register                                        : 1
+ 4-bit register                                        : 2
+ 6-bit register                                        : 2
+ 7-bit register                                        : 1
+ 8-bit register                                        : 3
+# Multiplexers                                         : 17
+ 1-bit 2-to-1 multiplexer                              : 3
+ 1-bit 8-to-1 multiplexer                              : 1
+ 10-bit 2-to-1 multiplexer                             : 2
+ 2-bit 2-to-1 multiplexer                              : 1
+ 3-bit 2-to-1 multiplexer                              : 1
+ 4-bit 2-to-1 multiplexer                              : 2
+ 7-bit 2-to-1 multiplexer                              : 1
+ 8-bit 2-to-1 multiplexer                              : 4
+ 8-bit 4-to-1 multiplexer                              : 2
+# FSMs                                                 : 3
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/sine_lut.ngc>.
+Reading core <ipcore_dir/cose_lut.ngc>.
+Loading core <sine_lut> for timing and area information for instance <sine_lut_inst>.
+Loading core <cose_lut> for timing and area information for instance <cose_lut_inst>.
+
+Synthesizing (advanced) Unit <adc_receiver>.
+The following registers are absorbed into counter <bit_cnt>: 1 register on signal <bit_cnt>.
+The following registers are absorbed into counter <quiet_cnt>: 1 register on signal <quiet_cnt>.
+Unit <adc_receiver> synthesized (advanced).
+
+Synthesizing (advanced) Unit <max5853_dual_cntrl>.
+The following registers are absorbed into counter <clk_div_cnt>: 1 register on signal <clk_div_cnt>.
+The following registers are absorbed into counter <control_counter>: 1 register on signal <control_counter>.
+Unit <max5853_dual_cntrl> synthesized (advanced).
+
+Synthesizing (advanced) Unit <sin_gen>.
+The following registers are absorbed into accumulator <phase_acc>: 1 register on signal <phase_acc>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+The following registers are absorbed into counter <frame_count>: 1 register on signal <frame_count>.
+The following registers are absorbed into counter <byte_idx>: 1 register on signal <byte_idx>.
+Unit <sin_gen> synthesized (advanced).
+
+Synthesizing (advanced) Unit <uart_transmitter>.
+The following registers are absorbed into counter <bit_index>: 1 register on signal <bit_index>.
+Unit <uart_transmitter> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 8-bit adder                                           : 1
+# Counters                                             : 8
+ 2-bit up counter                                      : 2
+ 3-bit up counter                                      : 1
+ 4-bit up counter                                      : 2
+ 6-bit up counter                                      : 2
+ 7-bit up counter                                      : 1
+# Accumulators                                         : 1
+ 24-bit up accumulator                                 : 1
+# Registers                                            : 141
+ Flip-Flops                                            : 141
+# Multiplexers                                         : 12
+ 1-bit 2-to-1 multiplexer                              : 3
+ 1-bit 8-to-1 multiplexer                              : 1
+ 10-bit 2-to-1 multiplexer                             : 2
+ 8-bit 2-to-1 multiplexer                              : 4
+ 8-bit 4-to-1 multiplexer                              : 2
+# FSMs                                                 : 3
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <state[1:3]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 000
+ 001   | 001
+ 010   | 010
+ 011   | 011
+ 100   | 100
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <adc_receiver_inst/FSM_1> on signal <state[1:2]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 11
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <uart_inst/FSM_2> on signal <state[1:2]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 11
+ 11    | 10
+-------------------
+WARNING:Xst:2677 - Node <phase_acc_0> of sequential type is unconnected in block <sin_gen>.
+
+Optimizing unit <sin_gen> ...
+
+Optimizing unit <max5853_dual_cntrl> ...
+
+Optimizing unit <adc_receiver> ...
+
+Optimizing unit <uart_transmitter> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block sin_gen, actual ratio is 1.
+FlipFlop adc_receiver_inst/state_FSM_FFd1 has been replicated 1 time(s)
+FlipFlop phase_acc_16 has been replicated 1 time(s)
+FlipFlop phase_acc_17 has been replicated 1 time(s)
+FlipFlop phase_acc_18 has been replicated 1 time(s)
+FlipFlop phase_acc_19 has been replicated 1 time(s)
+FlipFlop phase_acc_20 has been replicated 1 time(s)
+FlipFlop phase_acc_21 has been replicated 1 time(s)
+FlipFlop phase_acc_22 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 213
+ Flip-Flops                                            : 213
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : sin_gen.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 320
+#      GND                         : 3
+#      INV                         : 18
+#      LUT1                        : 12
+#      LUT2                        : 10
+#      LUT3                        : 27
+#      LUT4                        : 21
+#      LUT5                        : 21
+#      LUT6                        : 110
+#      MUXCY                       : 22
+#      MUXF7                       : 31
+#      MUXF8                       : 19
+#      VCC                         : 3
+#      XORCY                       : 23
+# FlipFlops/Latches                : 213
+#      FDC                         : 5
+#      FDCE                        : 72
+#      FDE                         : 10
+#      FDP                         : 1
+#      FDR                         : 57
+#      FDRE                        : 66
+#      FDS                         : 2
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 22
+#      IBUF                        : 3
+#      OBUF                        : 19
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx45tfgg484-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             213  out of  54576     0%  
+ Number of Slice LUTs:                  219  out of  27288     0%  
+    Number used as Logic:               219  out of  27288     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    332
+   Number with an unused Flip Flop:     119  out of    332    35%  
+   Number with an unused LUT:           113  out of    332    34%  
+   Number of fully used LUT-FF pairs:   100  out of    332    30%  
+   Number of unique control sets:        15
+
+IO Utilization: 
+ Number of IOs:                          23
+ Number of bonded IOBs:                  23  out of    296     7%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 213   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 4.050ns (Maximum Frequency: 246.895MHz)
+   Minimum input arrival time before clock: 5.196ns
+   Maximum output required time after clock: 4.875ns
+   Maximum combinational path delay: 6.832ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 4.050ns (frequency: 246.895MHz)
+  Total number of paths / destination ports: 2034 / 365
+-------------------------------------------------------------------------
+Delay:               4.050ns (Levels of Logic = 5)
+  Source:            phase_acc_18_1 (FF)
+  Destination:       max5853_inst/dac_data_9 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: phase_acc_18_1 to max5853_inst/dac_data_9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             34   0.525   1.549  phase_acc_18_1 (phase_acc_18_1)
+     begin scope: 'sine_lut_inst'
+     begin scope: 'BU2'
+     LUT3:I0->O            1   0.235   0.580  U0/gen_rom.rom_inst/Mram_spo_int2011_SW0 (N0)
+     LUT6:I5->O            1   0.254   0.580  U0/gen_rom.rom_inst/Mram_spo_int2011 (spo(9))
+     end scope: 'BU2'
+     end scope: 'sine_lut_inst'
+     LUT4:I3->O            1   0.254   0.000  max5853_inst/Mmux_dac_data[9]_GND_4_o_mux_11_OUT101 (max5853_inst/dac_data[9]_GND_4_o_mux_11_OUT<9>)
+     FDE:D                     0.074          max5853_inst/dac_data_9
+    ----------------------------------------
+    Total                      4.050ns (1.342ns logic, 2.708ns route)
+                                       (33.1% logic, 66.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 225 / 225
+-------------------------------------------------------------------------
+Offset:              5.196ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       counter_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: reset to counter_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           210   1.228   2.511  reset_IBUF (reset_IBUF)
+     LUT6:I0->O            6   0.254   0.744  Mcount_counter_val2 (Mcount_counter_val)
+     FDR:R                     0.459          counter_0
+    ----------------------------------------
+    Total                      5.196ns (1.941ns logic, 3.255ns route)
+                                       (37.4% logic, 62.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 18 / 18
+-------------------------------------------------------------------------
+Offset:              4.875ns (Levels of Logic = 2)
+  Source:            out_takt (FF)
+  Destination:       takt_n (PAD)
+  Source Clock:      clk rising
+
+  Data Path: out_takt to takt_n
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              8   0.525   0.802  out_takt (out_takt)
+     INV:I->O              1   0.255   0.579  takt_n1_INV_0 (takt_n_OBUF)
+     OBUF:I->O                 2.715          takt_n_OBUF (takt_n)
+    ----------------------------------------
+    Total                      4.875ns (3.495ns logic, 1.380ns route)
+                                       (71.7% logic, 28.3% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               6.832ns (Levels of Logic = 3)
+  Source:            reset (PAD)
+  Destination:       led_ds4 (PAD)
+
+  Data Path: reset to led_ds4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           210   1.228   2.055  reset_IBUF (reset_IBUF)
+     INV:I->O              1   0.255   0.579  led_ds41_INV_0 (led_ds4_OBUF)
+     OBUF:I->O                 2.715          led_ds4_OBUF (led_ds4)
+    ----------------------------------------
+    Total                      6.832ns (4.198ns logic, 2.634ns route)
+                                       (61.4% logic, 38.6% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 6.64 secs
+ 
+--> 
+
+Total memory usage is 264388 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

@@ -1,0 +1,72 @@
+#-----------------------------------------------------------
+# PlanAhead v12.2
+# Build 65285 by hdbuild on Wed Jun 23 14:55:19 PDT 2010
+# Start of session at: Fri Apr 03 15:41:32 2026
+# Process ID: 3644
+# Log file: C:/Xilinx/Project/sin_gen/planAhead_run_1/planAhead.log
+# Journal file: C:/Xilinx/Project/sin_gen/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+INFO: [HD-Licensing 0] Attempting to get a license: PlanAhead
+INFO: [HD-Licensing 1] Got a license: PlanAhead
+INFO: [HD-ArchReader 0] Loading parts and site information from D:\Xilinx\12.2\ISE_DS\PlanAhead\parts\arch.xml
+INFO: [HD-RTPRIM 0] Parsing RTL primitives file 'D:\Xilinx\12.2\ISE_DS\PlanAhead\parts\xilinx\rtl\prims\rtl_prims.xml'
+INFO: [HD-RTPRIM 1] Finished Parsing RTL primitives file 'D:\Xilinx\12.2\ISE_DS\PlanAhead\parts\xilinx\rtl\prims\rtl_prims.xml'
+source D:/Xilinx/12.2/ISE_DS/PlanAhead/scripts/sdc.tcl
+start_gui -source C:/Xilinx/Project/sin_gen/pa.fromHdl.tcl
+# create_project -name sin_gen -dir "C:/Xilinx/Project/sin_gen/planAhead_run_1" -part xc6slx45tfgg484-3
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property top sin_gen $srcset
+# set_param project.paUcfFile  "C:/Users/msemakin/Desktop/takt_gen/takt_gen_connection (2).ucf"
+# set hdlfile [add_files [list {ipcore_dir/sine_lut.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../../../Users/msemakin/Desktop/takt_gen/sin_gen.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# add_files "C:/Users/msemakin/Desktop/takt_gen/takt_gen_connection (2).ucf" -fileset [get_property constrset [current_run]]
+WARN: [HD-Tcl 5] File or Directory 'C:\Users\msemakin\Desktop\takt_gen\takt_gen_connection' does not exist, ignored
+WARN: [HD-Tcl 5] File or Directory 'C:\Xilinx\Project\sin_gen\(2).ucf' does not exist, ignored
+# open_rtl_design -part xc6slx45tfgg484-3
+INFO: [HD-RTLIN 2] Parsing VHDL file "D:\Xilinx\12.2\ISE_DS\PlanAhead\parts\xilinx\rtl\lib\synplify\synattr.vhd" into library synplify
+INFO: [HD-RTLIN 2] Parsing package <attributes>.
+INFO: [HD-RTLIN 2] Parsing Verilog file "C:\Xilinx\Project\sin_gen\ipcore_dir\sine_lut.v" into library work
+INFO: [HD-RTLIN 2] Parsing module <sine_lut>.
+INFO: [HD-RTLIN 2] Parsing Verilog file "C:\Users\msemakin\Desktop\takt_gen\sin_gen.v" into library work
+INFO: [HD-RTLIN 2] Parsing module <sin_gen>.
+INFO: [HD-RTLIN 2] Elaborating module <sin_gen>.
+WARN: [HD-RTLIN 1] C:\Users\msemakin\Desktop\takt_gen\sin_gen.v(51) Result of 3-bit expression is truncated to fit in 2-bit target.
+WARN: [HD-RTLIN 1] C:\Users\msemakin\Desktop\takt_gen\sin_gen.v(53) Result of 6-bit expression is truncated to fit in 5-bit target.
+INFO: [HD-RTLIN 2] Elaborating module <sine_lut>.
+WARN: [HD-RTLIN 1] C:\Xilinx\Project\sin_gen\ipcore_dir\sine_lut.v(40) Empty module sine_lut remains a black box.
+WARN: [HD-EDIFIN 0] Could not resolve black box 'sine_lut' defined in file 'sine_lut.v'
+INFO: [HD-ArchReader 7] Loading clock regions from D:/Xilinx/12.2/ISE_DS/PlanAhead/parts/xilinx/spartan6/spartan6lxt/xc6slx45t/ClockRegion.xml
+INFO: [HD-ArchReader 8] Loading clock buffers from D:/Xilinx/12.2/ISE_DS/PlanAhead/parts/xilinx/spartan6/spartan6lxt/xc6slx45t/ClockBuffers.xml
+INFO: [HD-ArchReader 3] Loading package from D:/Xilinx/12.2/ISE_DS/PlanAhead/parts/xilinx/spartan6/spartan6lxt/xc6slx45t/fgg484/Package.xml
+INFO: [HD-ArchReader 13] Loading package pin functions from D:/Xilinx/12.2/ISE_DS/PlanAhead/parts/xilinx/spartan6/PinFunctions.xml...
+INFO: [HD-ArchReader 4] Loading io standards from D:/Xilinx/12.2/ISE_DS/PlanAhead/./parts/xilinx/spartan6/IOStandards.xml
+INFO: [HD-ArchReader 12] Loading device configuration modes from D:/Xilinx/12.2/ISE_DS/PlanAhead/parts/xilinx/spartan6/ConfigModes.xml
+INFO: [HD-GDRC 0] Loading list of drcs for the architecture : D:/Xilinx/12.2/ISE_DS/PlanAhead/./parts/xilinx/spartan6/drc.xml
+
+DESIGN RULE CHECK VIOLATION REPORT
+   Build: PlanAhead v12.2 by hdbuild
+          on  Wed Jun 23 14:55:19 PDT 2010
+  Report: by msemakin on host sitas36, pid 3644
+          on Fri Apr 03 15:42:03 2026
+
+REPORT SUMMARY
+            Netlist: sin_gen
+          Floorplan: <none>
+      Design limits: <entire design considered>
+             Checks: Unknown block name
+                     Unknown Unisim pin name
+                     Mismatching Attribute
+           Max vios: <unlimited>
+         Vios found: 0
+
+REPORT DETAILS
+INFO: [HD-LIB 0] Reading timing library D:/Xilinx/12.2/ISE_DS/PlanAhead/./parts/xilinx/spartan6/spartan6.lib .
+INFO: [HD-LIB 1] Done reading timing library D:/Xilinx/12.2/ISE_DS/PlanAhead/./parts/xilinx/spartan6/spartan6.lib .
+exit
+INFO: [HD-Application 0] Exiting PlanAhead...
+INFO: [HD-Licensing 2] Releasing license: PlanAhead

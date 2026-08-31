@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SP605 — русская офлайн-документация</title><link rel="stylesheet" href="assets/style.css"></head>
+<body>
+<header class="hero"><div class="wrap"><span class="badge">SP605 · XC6SLX45T-3FGG484</span>
+<h1>SP605 — русская офлайн-документация</h1><p>Интерактивный комплект по плате Xilinx SP605 и FPGA Spartan-6 XC6SLX45T-3FGG484.</p>
+<div class="hero-actions"><a href="pin_navigator.html">Найти пин</a><a href="docs/SP605_common_pins_RU.ucf">Открыть UCF</a><a href="docs/SP605_UG526_RU_adapted.pdf">PDF по плате</a></div>
+</div></header>
+<nav class="topnav"><div class="inner">
+<a href="index.html" class="active">Главная</a>
+<a href="sp605_ug526_ru.html" class="">Плата SP605</a>
+<a href="ug385_fgg484_ru.html" class="">Корпус FGG484</a>
+<a href="pin_navigator.html" class="">Навигатор пинов</a>
+<a href="docs/SP605_common_pins_RU.ucf">UCF</a>
+</div></nav><main class="wrap">
+<section class="card">
+<h2>Русская HTML-документация</h2>
+<p>Комплект работает полностью офлайн. После распаковки откройте <b>index.html</b> в браузере.</p>
+<div class="grid">
+<a class="tile" href="sp605_ug526_ru.html"><b>Плата SP605</b><span>UART, JTAG, тактирование, кнопки, LED, память, UCF и запуск проекта.</span></a>
+<a class="tile" href="ug385_fgg484_ru.html"><b>XC6SLX45T / FGG484</b><span>Корпус, BGA-координаты, банки I/O, дифференциальные пары и GTP.</span></a>
+<a class="tile" href="pin_navigator.html"><b>Интерактивный навигатор пинов</b><span>Поиск по B21, AB13, F5, AB4, UART, кнопкам и другим узлам.</span></a>
+<a class="tile" href="docs/SP605_common_pins_RU.ucf"><b>Готовый UCF</b><span>Часто используемые пины с русскими комментариями.</span></a>
+</div>
+</section>
+<section class="card">
+<h2>Ваш текущий тест UART</h2>
+<table><tr><th>Порт RTL</th><th>Вывод FPGA</th><th>Элемент платы</th><th>Назначение</th></tr>
+<tr><td><code>clk</code></td><td>AB13</td><td>X2 USER_CLOCK, 27 МГц</td><td>Тактирование проекта</td></tr>
+<tr><td><code>reset</code></td><td>F5</td><td>SW5</td><td>При нажатии логическая 1</td></tr>
+<tr><td><code>led</code></td><td>AB4</td><td>DS4</td><td>Активен высоким уровнем</td></tr>
+<tr><td><code>uart_tx</code></td><td>B21</td><td>CP2103 RXD, J23</td><td>FPGA → компьютер</td></tr>
+</table>
+<div class="success"><b>Ожидаемый поток:</b> <code>A5</code>, затем 128 четырёхбайтовых фреймов, затем снова <code>A5</code>.</div>
+</section>
+<section class="card">
+<h2>Файлы документации</h2>
+<div class="grid">
+<a class="tile" href="docs/SP605_UG526_RU_adapted.pdf"><b>UG526 на русском — PDF</b><span>Адаптированное руководство по плате.</span></a>
+<a class="tile" href="docs/Spartan6_UG385_FGG484_RU_adapted.pdf"><b>UG385/FGG484 на русском — PDF</b><span>Распиновка и архитектура выводов.</span></a>
+<a class="tile" href="docs/SP605_UG526_Hardware_User_Guide.pdf"><b>Оригинальный UG526</b><span>Английский первоисточник.</span></a>
+<a class="tile" href="docs/Spartan6_UG385_Packaging_and_Pinouts.pdf"><b>Оригинальный UG385</b><span>Полный английский справочник.</span></a>
+</div>
+</section>
+<section class="card">
+<h2>Фото платы</h2>
+<img class="board-img" src="assets/sp605_board_photo.png" alt="Плата Xilinx SP605">
+</section>
+</main>
+<footer class="footer">Неофициальная русская адаптация. Номера выводов и названия сигналов сохранены как в документации AMD/Xilinx.</footer>
+<script src="assets/app.js"></script></body></html>

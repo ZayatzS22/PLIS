@@ -1,0 +1,30 @@
+//! **************************************************************************
+// Written by: Map M.63c on Thu Aug 06 16:14:59 2026
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "led_ds4" LOCATE = SITE "AB4" LEVEL 1;
+COMP "adc_cs" LOCATE = SITE "Y17" LEVEL 1;
+COMP "control" LOCATE = SITE "G9" LEVEL 1;
+COMP "signal_out<0>" LOCATE = SITE "H10" LEVEL 1;
+COMP "signal_out<1>" LOCATE = SITE "H14" LEVEL 1;
+COMP "signal_out<2>" LOCATE = SITE "H13" LEVEL 1;
+COMP "signal_out<3>" LOCATE = SITE "G16" LEVEL 1;
+COMP "signal_out<4>" LOCATE = SITE "C17" LEVEL 1;
+COMP "signal_out<5>" LOCATE = SITE "D18" LEVEL 1;
+COMP "signal_out<6>" LOCATE = SITE "C5" LEVEL 1;
+COMP "signal_out<7>" LOCATE = SITE "Y11" LEVEL 1;
+COMP "signal_out<8>" LOCATE = SITE "T12" LEVEL 1;
+COMP "signal_out<9>" LOCATE = SITE "R11" LEVEL 1;
+COMP "adc_clk" LOCATE = SITE "AA10" LEVEL 1;
+COMP "reset" LOCATE = SITE "G6" LEVEL 1;
+COMP "adc_data_a" LOCATE = SITE "W14" LEVEL 1;
+COMP "adc_data_b" LOCATE = SITE "U14" LEVEL 1;
+COMP "out_clk_n" LOCATE = SITE "R8" LEVEL 1;
+COMP "out_clk_p" LOCATE = SITE "R9" LEVEL 1;
+COMP "clk" LOCATE = SITE "AB13" LEVEL 1;
+COMP "takt_n" LOCATE = SITE "V15" LEVEL 1;
+COMP "takt_p" LOCATE = SITE "U16" LEVEL 1;
+COMP "uart_tx" LOCATE = SITE "B21" LEVEL 1;
+SCHEMATIC END;
+

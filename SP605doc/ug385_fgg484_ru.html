@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>XC6SLX45T / FGG484 — выводы и корпус</title><link rel="stylesheet" href="assets/style.css"></head>
+<body>
+<header class="hero"><div class="wrap"><span class="badge">SP605 · XC6SLX45T-3FGG484</span>
+<h1>XC6SLX45T / FGG484 — выводы и корпус</h1><p>Русская HTML-адаптация необходимых разделов UG385 для платы SP605.</p>
+<div class="hero-actions"><a href="pin_navigator.html">Найти пин</a><a href="docs/SP605_common_pins_RU.ucf">Открыть UCF</a><a href="docs/SP605_UG526_RU_adapted.pdf">PDF по плате</a></div>
+</div></header>
+<nav class="topnav"><div class="inner">
+<a href="index.html" class="">Главная</a>
+<a href="sp605_ug526_ru.html" class="">Плата SP605</a>
+<a href="ug385_fgg484_ru.html" class="active">Корпус FGG484</a>
+<a href="pin_navigator.html" class="">Навигатор пинов</a>
+<a href="docs/SP605_common_pins_RU.ucf">UCF</a>
+</div></nav><main class="wrap">
+<div class="mobile-toc"><select class="searchbox" data-jump><option value="">Перейти к разделу…</option><option value="package">1. Что означает FGG484</option><option value="coords">2. Как читать BGA-координаты</option><option value="types">3. Типы выводов</option><option value="names">4. Имена функций I/O</option><option value="banks">5. Банки I/O и VCCO</option><option value="diff">6. Дифференциальные пары</option><option value="clockpins">7. Тактовые пины GCLK</option><option value="config">8. Конфигурационные пины</option><option value="gtp">9. GTP-трансиверы</option><option value="powerpins">10. Специальные пины питания</option><option value="workflow">11. Как искать пин</option><option value="sp605pins">12. Нужные пины SP605</option><option value="rules">13. Правила pin planning</option></select></div>
+<div class="layout"><aside class="sidebar"><b>Содержание</b><a href="#package">1. Что означает FGG484</a><a href="#coords">2. Как читать BGA-координаты</a><a href="#types">3. Типы выводов</a><a href="#names">4. Имена функций I/O</a><a href="#banks">5. Банки I/O и VCCO</a><a href="#diff">6. Дифференциальные пары</a><a href="#clockpins">7. Тактовые пины GCLK</a><a href="#config">8. Конфигурационные пины</a><a href="#gtp">9. GTP-трансиверы</a><a href="#powerpins">10. Специальные пины питания</a><a href="#workflow">11. Как искать пин</a><a href="#sp605pins">12. Нужные пины SP605</a><a href="#rules">13. Правила pin planning</a></aside><div class="content"><section class="doc-section" id="package"><h2>1. Что означает FGG484</h2>
+<table><tr><th>Часть</th><th>Смысл</th></tr><tr><td>FG</td><td>Fine-pitch Ball Grid Array</td></tr><tr><td>G</td><td>Бессвинцовый вариант</td></tr><tr><td>484</td><td>Количество шаров корпуса</td></tr></table>
+<p>FGG484 и FG484 имеют одинаковую распиновку, но корпуса другого типа с 484 шарами не обязательно совместимы.</p>
+</section><section class="doc-section" id="coords"><h2>2. Как читать BGA-координаты</h2>
+<p>B21, AB13 и F5 — координаты шара BGA: буквенная строка и числовой столбец.</p>
+<ul><li><code>LOC = "B21"</code> назначает порт на этот шар.</li><li>Координата BGA не равна номеру контакта внешнего разъёма.</li><li>При проектировании своей платы учитывайте ориентацию корпуса и вид сверху/снизу.</li></ul>
+</section><section class="doc-section" id="types"><h2>3. Типы выводов</h2>
+<table><tr><th>Тип</th><th>Назначение</th></tr>
+<tr><td>User I/O</td><td>Обычный программируемый ввод/вывод</td></tr>
+<tr><td>Multi-function I/O</td><td>I/O с дополнительной конфигурационной/тактовой функцией</td></tr>
+<tr><td>Configuration</td><td>Выделенные выводы конфигурирования</td></tr>
+<tr><td>Power/GND</td><td>Питание и земля</td></tr>
+<tr><td>GTP</td><td>Высокоскоростные трансиверы</td></tr>
+<tr><td>JTAG</td><td>TCK/TMS/TDI/TDO</td></tr></table>
+</section><section class="doc-section" id="names"><h2>4. Имена функций I/O</h2>
+<table><tr><th>Фрагмент</th><th>Значение</th></tr><tr><td>IO</td><td>Программируемый I/O</td></tr><tr><td>Lxx</td><td>Номер логической пары</td></tr><tr><td>P/N</td><td>Положительная/отрицательная линия пары</td></tr><tr><td>GCLK</td><td>Clock-capable pin</td></tr><tr><td>Dxx</td><td>Дополнительная функция данных</td></tr><tr><td>Последняя цифра</td><td>Номер банка</td></tr></table>
+</section><section class="doc-section" id="banks"><h2>5. Банки I/O и VCCO</h2>
+<p>Все выходные драйверы банка питаются от его VCCO. Поэтому стандарт LVCMOS/SSTL/HSTL должен быть совместим с напряжением банка.</p>
+<div class="warning">Нельзя выбирать IOSTANDARD только по желаемому уровню: сначала проверьте схему SP605 и напряжение банка.</div>
+</section><section class="doc-section" id="diff"><h2>6. Дифференциальные пары</h2>
+<p>Дифференциальный сигнал использует настоящую пару P/N одного ресурса. Два произвольных соседних пина не заменяют пару.</p>
+<div class="code-wrap"><button class="copy-btn">Копировать</button><pre>NET &quot;sysclk_p&quot; LOC = &quot;K21&quot;;
+NET &quot;sysclk_n&quot; LOC = &quot;K22&quot;;</pre></div>
+<p>Для системного 200-МГц генератора используйте <code>IBUFGDS</code>.</p>
+</section><section class="doc-section" id="clockpins"><h2>7. Тактовые пины GCLK</h2>
+<ul><li>Системные такты назначайте на clock-capable pins.</li><li>Используйте BUFG/IBUFG/IBUFGDS.</li><li>Задавайте PERIOD/TIMESPEC.</li><li>Не прокладывайте высокочастотный такт через обычную логику без необходимости.</li></ul>
+</section><section class="doc-section" id="config"><h2>8. Конфигурационные пины</h2>
+<table><tr><th>Сигнал</th><th>Функция</th></tr><tr><td>PROGRAM_B</td><td>Повторная конфигурация</td></tr><tr><td>INIT_B</td><td>Инициализация/ошибка</td></tr><tr><td>DONE</td><td>Конфигурация завершена</td></tr><tr><td>M[1:0]</td><td>Выбор режима загрузки</td></tr><tr><td>TCK/TMS/TDI/TDO</td><td>JTAG</td></tr></table>
+</section><section class="doc-section" id="gtp"><h2>9. GTP-трансиверы</h2>
+<p>Буква T в LX45T обозначает наличие GTP. Их TX/RX-пины нельзя использовать как обычные GPIO. Для PCIe, SFP и SMA применяются специальные primitives/IP cores и reference clocks.</p>
+</section><section class="doc-section" id="powerpins"><h2>10. Специальные пины питания</h2>
+<table><tr><th>Группа</th><th>Назначение</th></tr><tr><td>VCCINT</td><td>Питание ядра</td></tr><tr><td>VCCAUX</td><td>Вспомогательное питание</td></tr><tr><td>VCCO_n</td><td>Питание банка I/O</td></tr><tr><td>VREF</td><td>Опора для некоторых стандартов</td></tr><tr><td>MGTAVCC/MGTAVTT</td><td>Аналоговое питание GTP</td></tr></table>
+</section><section class="doc-section" id="workflow"><h2>11. Как искать пин</h2>
+<ol><li>Определите устройство XC6SLX45T.</li><li>Выберите корпус FGG484.</li><li>Найдите координату или функцию в UG385.</li><li>Проверьте банк и специальные функции.</li><li>Затем проверьте UG526/схему платы — именно она показывает, к чему пин подключён на SP605.</li></ol>
+</section><section class="doc-section" id="sp605pins"><h2>12. Нужные пины SP605</h2>
+<input class="searchbox" data-filter-input="#quickPins" placeholder="Фильтр: B21, UART, LED, reset…">
+<table class="pin-table" id="quickPins"><thead><tr><th>Пин</th><th>Подключение</th><th>Назначение</th></tr></thead><tbody>
+<tr data-search="ab13 clock clk 27 мгц user_clock"><td><a href="pin_navigator.html">AB13</a></td><td>X2, 27 МГц</td><td>clk</td></tr>
+<tr data-search="b21 uart tx usb cp2103"><td><a href="pin_navigator.html">B21</a></td><td>FPGA TX → CP2103 RX</td><td>uart_tx</td></tr>
+<tr data-search="h17 uart rx usb cp2103"><td><a href="pin_navigator.html">H17</a></td><td>CP2103 TX → FPGA RX</td><td>uart_rx</td></tr>
+<tr data-search="ab4 led ds4"><td><a href="pin_navigator.html">AB4</a></td><td>DS4 / LED1</td><td>led</td></tr>
+<tr data-search="f5 reset button sw5"><td><a href="pin_navigator.html">F5</a></td><td>SW5 / BUTTON2</td><td>reset</td></tr>
+<tr data-search="h8 reset cpu sw6"><td><a href="pin_navigator.html">H8</a></td><td>CPU_RESET / SW6</td><td>reset</td></tr>
+<tr data-search="d17 led ds3"><td><a href="pin_navigator.html">D17</a></td><td>DS3 / LED0</td><td>led0</td></tr>
+<tr data-search="k21 k22 clock 200 mhz lvds"><td><a href="pin_navigator.html">K21/K22</a></td><td>SYSCLK 200 МГц</td><td>sysclk_p/n</td></tr>
+</tbody></table>
+</section><section class="doc-section" id="rules"><h2>13. Правила pin planning</h2>
+<ul><li>Сначала схема платы, затем таблица корпуса.</li><li>Задавайте LOC всем внешним top-level портам.</li><li>Проверяйте VCCO перед IOSTANDARD.</li><li>Дифференциальные сигналы — только настоящие пары P/N.</li><li>Не используйте GTP, power, NC и dedicated configuration как GPIO.</li><li>Не подавайте 5 В на FPGA I/O.</li></ul>
+</section></div></div>
+</main>
+<footer class="footer">Неофициальная русская адаптация. Номера выводов и названия сигналов сохранены как в документации AMD/Xilinx.</footer>
+<script src="assets/app.js"></script></body></html>

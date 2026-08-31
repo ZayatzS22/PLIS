@@ -1,0 +1,2 @@
+SETPROJECT "C:/Xilinx/Project/sin_gen/ipcore_dir/coregen.cgp"
+LAUNCHXCO "C:/Xilinx/Project/sin_gen/ipcore_dir/cose_lut.xco"
