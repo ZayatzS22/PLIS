@@ -10,11 +10,6 @@ module sin_gen(
 
     parameter [15:0] SYNC_MARKER = 16'hFFFF;
 
-    // Сколько полных кадров A/B держать одно и то же тестовое значение.
-    // При 115200 бод и TEST_HOLD_FRAMES = 16 полный проход 0...16383
-    // занимает примерно 90 секунд вместо ~5.7 секунды.
-    parameter integer TEST_HOLD_FRAMES = 16;
-
     assign led_ds4 = ~reset;
 
     wire tx_done;
@@ -25,7 +20,6 @@ module sin_gen(
     reg [15:0] adc_b;
 
     reg [13:0] test_value;
-    reg [7:0]  test_hold_count;
 
     reg [1:0] byte_idx;
     reg [6:0] frame_count;
@@ -47,20 +41,19 @@ module sin_gen(
 
     always @(posedge clk) begin
         if (reset) begin
-            uart_data       <= 8'd0;
-            byte_idx        <= 2'd0;
-            frame_count     <= 7'd0;
-            sync_byte_idx   <= 1'b0;
-            tx_start        <= 1'b0;
+            uart_data     <= 8'd0;
+            byte_idx      <= 2'd0;
+            frame_count   <= 7'd0;
+            sync_byte_idx <= 1'b0;
+            tx_start      <= 1'b0;
 
-            adc_a           <= 16'd0;
-            adc_b           <= 16'd0;
+            adc_a         <= 16'd0;
+            adc_b         <= 16'd0;
 
-            test_value      <= 14'h0000;
-            test_hold_count <= 8'd0;
+            test_value    <= 14'h0000;
 
-            tx_done_d       <= 1'b1;
-            state           <= S_SYNC_LOAD;
+            tx_done_d     <= 1'b1;
+            state         <= S_SYNC_LOAD;
 
         end else begin
             tx_done_d <= tx_done;
@@ -115,18 +108,10 @@ module sin_gen(
                 S_DATA_WAIT: begin
                     if (tx_done_rise) begin
                         if (byte_idx == 2'd3) begin
-                            // Замедляем только изменение тестового значения.
-                            // Сам UART продолжает передавать кадры с прежней скоростью.
-                            if (test_hold_count == TEST_HOLD_FRAMES - 1) begin
-                                test_hold_count <= 8'd0;
-
-                                if (test_value == 14'h3FFF)
-                                    test_value <= 14'h0000;
-                                else
-                                    test_value <= test_value + 14'd1;
-                            end else begin
-                                test_hold_count <= test_hold_count + 8'd1;
-                            end
+                            if (test_value == 14'h3FFF)
+                                test_value <= 14'h0000;
+                            else
+                                test_value <= test_value + 14'd1;
 
                             if (frame_count == 7'd127) begin
                                 frame_count   <= 7'd0;
