@@ -112,7 +112,7 @@ get_angle get_angle_inst(
     .phase_out(angle)
 );
 
-assign angle25 = angle << 4 + angle << 3 + angle;
+assign angle25 = (angle << 4) + (angle << 3) + angle;
 
 get_sin_cos get_sin_cos_inst(
     .clk(clk),
